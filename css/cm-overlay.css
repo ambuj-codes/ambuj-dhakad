@@ -79,7 +79,6 @@
 /* overlay border and shadow */
 #cm-overlay
 {
-    border:1px solid #eee;
     -webkit-box-shadow: 0 0 90px #000;
     -khtml-box-shadow:0 0 90px 5px #000;
     -moz-box-shadow:0 0 90px 5px #000;
