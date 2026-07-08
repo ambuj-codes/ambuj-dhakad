@@ -1,677 +1,670 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
-<html lang="en">
-<!-- Head -->
+<html lang="en" class="scroll-smooth">
 <head>
-<title>Ambuj Dhakad</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<meta name="keywords" content="Professional CV a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
-<!-- menu -->
-<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
-<!-- //menu -->
-<link href="css/jquery.fatNav.css" rel="stylesheet" type="text/css">
-
-<!--FlexSlider-->
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<!--//FlexSlider-->
-
-<link rel="stylesheet" href="css/lightbox.css"><!-- For-gallery-CSS -->
-
-<!-- custom css theme files -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<!-- //custom css theme files -->
-
-<!-- google fonts -->
-<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
-<!-- //google fonts -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambuj Dhakad — Management Consultant Portfolio</title>
+    <meta name="description" content="Management Consultant at EY Parthenon | IIM Kozhikode | NISER | Procurement, Cost Reduction, Market Entry Strategy">
+    <meta name="author" content="Ambuj Dhakad">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔴</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { inter: ['Inter', 'sans-serif'] },
+                    colors: { brand: { red: '#DC2626', dark: '#0a0a0a', gray: '#f5f5f5' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::selection{background:#DC2626;color:#fff}
+        ::-webkit-scrollbar{width:6px}
+        ::-webkit-scrollbar-track{background:#171717}
+        ::-webkit-scrollbar-thumb{background:#525252;border-radius:3px}
+        ::-webkit-scrollbar-thumb:hover{background:#737373}
+        html{font-family:'Inter',sans-serif}
+        @keyframes fadeInUp{0%{opacity:0;transform:translateY(30px)}100%{opacity:1;transform:translateY(0)}}
+        .anim-up{animation:fadeInUp .8s ease-out forwards;opacity:0}
+        .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}
+        .project-card{opacity:0}.project-card.visible{animation:fadeInUp .6s ease-out forwards}
+        .card-ov{background:linear-gradient(to top,#000,rgba(0,0,0,.4),transparent)}
+        .t-grad{background:linear-gradient(to right,#E5E5E5,#A3A3A3);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .nav-active{color:#DC2626!important}
+        .modal-bg{background:rgba(0,0,0,.8);backdrop-filter:blur(8px)}
+        .fbtn.active{background:#DC2626;color:#fff;border-color:#DC2626}
+        .tl-line{background:linear-gradient(to bottom,#DC2626,#404040,transparent)}
+    </style>
 </head>
-<!-- Body -->
-<body id="home">
-<!-- banner -->
-	<nav class="w3-navbar">
-					<div class="container">
-						<div class="nav-top">
-						
-							  <!-- Logo -->
-								<div class="logo">
-								  <a href="#home" class="scroll">
-									Ambuj <span>Dhakad</span>
-								  </a>
-							  </div>
-							  <!-- Logo -->
-							<div class="right">
-								<div class="w3-socials">
-									<ul>
-										<li>
-											<a href="https://www.linkedin.com/in/ambuj-dhakad/"><span class="fa fa-linkedin"></span></a>
-										</li>
-										<li> 
-											<a href="https://github.com/ambuj-codes"><span class="fa fa-github"></span></a>
-										</li>
+<body class="bg-brand-dark text-white font-inter">
 
-										<li>
-										<a href="https://ambujdhakad.blogspot.com/"><span class="fa fa-book"></span></a>
-										</li>
-										<li>
-											<a href="https://stackexchange.com/users/9062772/ambuj-dhakad?tab=accounts"><span class="fa fa-stack-exchange"></span></a>
+    <!-- NAV -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 h-20 flex items-center transition-all duration-300" style="background:rgba(10,10,10,.8);backdrop-filter:blur(12px)">
+        <div class="max-w-7xl mx-auto w-full px-6 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-brand-red rounded-lg flex items-center justify-center font-bold text-sm">AD</div>
+                <span class="text-sm font-semibold tracking-tight hidden sm:block">Ambuj Dhakad</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="nl text-sm font-medium text-neutral-400 hover:text-brand-red transition-colors duration-150">About</a>
+                <a href="#services" class="nl text-sm font-medium text-neutral-400 hover:text-brand-red transition-colors duration-150">Expertise</a>
+                <a href="#projects" class="nl text-sm font-medium text-neutral-400 hover:text-brand-red transition-colors duration-150">Projects</a>
+                <a href="#experience" class="nl text-sm font-medium text-neutral-400 hover:text-brand-red transition-colors duration-150">Experience</a>
+                <a href="#publications" class="nl text-sm font-medium text-neutral-400 hover:text-brand-red transition-colors duration-150">Research</a>
+                <a href="#contact" class="bg-brand-red hover:bg-red-700 text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded transition-colors duration-150">Get in Touch</a>
+            </div>
+            <button id="mobBtn" class="md:hidden text-white"><iconify-icon icon="lucide:menu" width="24"></iconify-icon></button>
+        </div>
+        <div id="mobMenu" class="hidden absolute top-20 left-0 right-0 bg-neutral-900 border-t border-neutral-800 md:hidden">
+            <div class="px-6 py-6 flex flex-col gap-4">
+                <a href="#about" class="ml text-sm font-medium text-neutral-400 hover:text-white transition-colors">About</a>
+                <a href="#services" class="ml text-sm font-medium text-neutral-400 hover:text-white transition-colors">Expertise</a>
+                <a href="#projects" class="ml text-sm font-medium text-neutral-400 hover:text-white transition-colors">Projects</a>
+                <a href="#experience" class="ml text-sm font-medium text-neutral-400 hover:text-white transition-colors">Experience</a>
+                <a href="#publications" class="ml text-sm font-medium text-neutral-400 hover:text-white transition-colors">Research</a>
+                <a href="#contact" class="bg-brand-red text-white text-xs font-semibold uppercase tracking-wider px-5 py-3 rounded text-center mt-2">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
 
-										</li>
-										<li> 
-											<a href="https://stackoverflow.com/users/7579016/ambuj-dhakad"><span class="fa fa-stack-overflow"></span></a>
-										</li>
+    <!-- HERO -->
+    <section id="hero" class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <img src="https://picsum.photos/seed/delhi-skyline-consulting/1920/1080.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(0,0,0,.7) 0%,rgba(0,0,0,.5) 40%,rgba(0,0,0,.85) 100%)"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-6 anim-up">EY Parthenon · IIM Kozhikode · NISER</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1] mb-6 anim-up d1">Ambuj<br><span class="t-grad">Dhakad</span></h1>
+            <p class="text-lg md:text-xl font-light text-neutral-400 max-w-2xl mx-auto leading-relaxed mb-10 anim-up d2">Management Consultant at EY Parthenon — turning complex challenges into growth stories through strategy, analytics, and relentless problem-solving.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center anim-up d3">
+                <a href="#projects" class="bg-brand-red hover:bg-red-700 text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded transition-colors duration-150 inline-flex items-center justify-center gap-2">View My Work <iconify-icon icon="lucide:arrow-down" width="14"></iconify-icon></a>
+                <a href="#contact" class="border border-neutral-700 hover:border-white text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded transition-colors duration-150 inline-flex items-center justify-center gap-2">Let's Connect <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon></a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"><iconify-icon icon="lucide:arrow-down" width="20" class="text-neutral-500"></iconify-icon></div>
+    </section>
 
+    <!-- STATS -->
+    <section class="bg-neutral-900 border-y border-neutral-800">
+        <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center"><div class="text-3xl md:text-4xl font-bold text-white mb-1" data-count="15" data-suffix="+">0</div><p class="text-xs font-medium uppercase tracking-widest text-neutral-500">Projects & Engagements</p></div>
+            <div class="text-center"><div class="text-3xl md:text-4xl font-bold text-white mb-1" data-count="4" data-suffix="">0</div><p class="text-xs font-medium uppercase tracking-widest text-neutral-500">Publications</p></div>
+            <div class="text-center"><div class="text-3xl md:text-4xl font-bold text-white mb-1" data-count="4" data-suffix="">0</div><p class="text-xs font-medium uppercase tracking-widest text-neutral-500">Institutions of Excellence</p></div>
+            <div class="text-center"><div class="text-3xl md:text-4xl font-bold text-white mb-1" data-count="3" data-suffix="">0</div><p class="text-xs font-medium uppercase tracking-widest text-neutral-500">Countries Worked In</p></div>
+        </div>
+    </section>
 
-
-
-
-										
-
-										<li>
-											<a href="#"><span class="fa fa-twitter"></span></a>
-										</li>
-									</ul>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						
-					</div> <!-- end container -->
-				
-	</nav>
-	
-<div class="w3l-banner">
-<div class="wthree-dot">
-
-	<!-- nav -->
-	<div class="w3layouts-nav-right">
-		<div class="fat-nav">
-			<div class="fat-nav__wrapper">
-				<ul>
-					<li><a href="index.html" >Home</a></li>
-					<li><a href="#about"  class="scroll" >About Me</a></li>
-					<li><a href="#services"  class="scroll" >My Services</a></li>
-					<li><a href="#skills"  class="scroll" >My Skills</a></li>
-					<li><a href="#gallery"  class="scroll" >My projects</a></li>
-					<li><a href="#stats"  class="scroll" >Stats</a></li>
-					<li><a href="#experience"  class="scroll" >Work Experience</a></li>
-					<li><a href="#contact"  class="scroll" >Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>		
-	<!-- //nav -->
-	
-		<!-- //Header -->
-		<div class="container">
-			<div class="flexslider-info">
-				<section class="slider col-md-6">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-							<div class="w3l-info">
-								<h1>My name is <span>Ambuj</span></h1>
-								<p>My job is to make meaningful data look beautiful. I love data analysis and solving competition level problems in my free time. </p>
-								<ul>
-									<li><a href="https://www.goodreads.com/ambujdhakad/" class="w3ls_more" >Learn More</a></li>
-									<li><a href="#contact" class="scroll w3l_contact">Contact Me</a></li>
-								</ul>
-							</div>
-							</li>
-							<li>
-								<div class="w3l-info">
-								<h2>this is my <span>website</span></h2>
-								<p>You are welcome.</p>
-								<ul>
-									<li><a href="https://www.linkedin.com/in/ambuj-dhakad/" class="w3ls_more" >Learn More</a></li>
-									<li><a href="#contact" class="scroll w3l_contact">Contact Me</a></li>
-								</ul>
-								</div>
-							</li>
-							<li>
-								<div class="w3l-info">
-								<h3>I'm a <span>budding manager</span></h3>
-								<p>I am MBA graduate from IIM Kozhikode. I also have research experience in spectroscopy, quantum and computaional chemistry.</p>
-								<ul>
-									<li><a href="#" class="w3ls_more">Hire Me</a></li>
-									<li><a href="#contact" class="scroll w3l_contact">Contact Me</a></li>
-								</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- //banner -->
-
-<!-- About section -->
-<div class="about" id="about">
-	<div class="container">
-		<h3 class="text-center">About Me</h3>
-		
-		<div class="col-md-5 about_left">
-							<ul class="address">
-								<li>
-									<ul class="agileits-address-text ">
-										<li><b>Name</b></li>
-										<li>Ambuj Dhakad</li>
-									</ul>
-								</li>
-								
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>PHONE</b></li>
-										<li>NA</li>
-									</ul>
-								</li>
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>JOB</b></li>
-										<li>Management Consultant</li>
-									</ul>
-								</li>
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>EXPERIENCE</b></li>
-										<li>1+ Years</li>
-									</ul>
-								</li>
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>ADDRESS </b></li>
-										<li>IIM Kozhikode</li>
-									</ul>
-								</li>
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>E-MAIL </b></li>
-										<li><a href="mailto:ambujdhakad65@gmail.com"> ambujdhakad65@gmail.com</a></li>
-									</ul>
-								</li>
-								<li>
-									<ul class="agileits-address-text">
-										<li><b>WEBSITE </b></li>
-										<li><a href="https://ambuj-codes.github.io/ambuj-dhakad/">GitHub-pages</a></li>
-									</ul>
-								</li>
-							</ul>
-							<div class="w3-socials about-social">
-									<ul>
-										<li>
-											<a href="https://www.linkedin.com/in/ambujdhakad/"><span class="fa fa-linkedin"></span></a>
-										</li>
-										
-										<li>
-											<a href="https://stackexchange.com/users/9062772/ambuj-dhakad?tab=accounts"><span class="fa fa-stack-exchange"></span></a>
-
-										</li>
-										<li> 
-											<a href="https://ambujdhakad.blogspot.com"><span class=<i class="fa fa‑blog"></span></a>
-										</li>
-
-										
-
-										<li>
-											<a href="#"><span class="fa fa-twitter"></span></a>
-										</li>
-									</ul>
-								</div>
-		</div>
-		<div class="col-md-7 about_right">
-			<h3>Hi, I am Ambuj Dhakad</h3>
-			<h4>MBA graduate from Indian Institute Of Management – Kozhikode</h4>
-			<p> Ambuj worked at RBI Chennai in General Managers Office. As part of his graduate and postgraduate education, he studied basic sciences at the Homi Bhabha National Institute-NISER. He went on to publish two peer-reviewed research publications in prominent international journals. He has also written a chapter in a famous spectroscopy book. He taught elementary school students at a rural school in Gwalior, worked in the rural sector in the door-to-door awareness program under Swatch Bharat Mission, and organized menstrual hygiene awareness talks in 52+ villages in Madhya Pradesh. In his free time, he engages in outdoor sports and trekking. </p>
-			<p>I have keen interest in management and leadership. I am a fitness enthusiast, normally my day starts with a workout. I have summited three 5000+ meter Himalayan peaks :-).</p>
-			<ul>
-				<li><a href="#contact" class="w3ls_more scroll" >Hire Me</a></li>
-				<li><a href="#contact" class="w3l scroll">Contact Me</a></li>
-			</ul>
-		</div>
-		<div class="clearfix"></div>
-		
-	</div>
-</div>
-<!-- //About section -->
-
-<!-- /services -->
-<div class="w3-services" id="services">
-	<div class="container">
-			<div class="w3-services-grids">
-						<h3 class="text-center">My Services</h3>
-				<div class="col-md-4 w3-services-left-grid">
-					<h4>Ambuj does coding in his freetime.</h4>
-					<p>Ambuj Dhakad has five repositories on GitHub. He is enthusiastic about scientific data analysis using python. He also is well versed in HTML5 and CSS. He uses these skills for web designing and web development. He also manages the official LinkedIn page of Blokada.</p>
-					<div class="more">
-						<a href="https://github.com/ambuj-codes">Know more</a>
-					</div>
-				</div>
-				<div class="col-md-8 w3-services-right-grid">
-				<div class="w3-icon-grid-gap1">
-					<div class="col-md-4 w3-icon-grid1">
-						<i class="fa fa-codepen" aria-hidden="true"></i>
-						<h3>Web design</h3>
-						<div class="clearfix"></div>
-						<p>Visit my GitHub page to check out my work.</p>
-					</div>
-					<div class="col-md-4 w3-icon-grid1">
-						<i class="fa fa-mobile" aria-hidden="true"></i>
-						<h3>Mobile Apps</h3>
-						<div class="clearfix"></div>
-						<p>Visit my GitHub page to check out my work.</p>
-					</div>
-					<div class="col-md-4 w3-icon-grid1">
-						<i class="fa fa-hourglass" aria-hidden="true"></i>
-						<h3>IIM Kozhikode</h3>
-						<div class="clearfix"></div>
-						<p>I am an MBA student at IIM Kozhikode.</p>
-					</div>
-					<div class="clearfix"></div>
-					</div>
-					<div class="w3-icon-grid-gap2">
-					<div class="col-md-4 w3-icon-grid1">
-						<i class="fa fa-modx" aria-hidden="true"></i>
-						<h3>Photoshop</h3>
-						<div class="clearfix"></div>
-						<p>Designed logo and wallpapers for various events.</p>
-					</div>
-					<div class="col-md-4 w3-icon-grid1">
-						<i class="fa fa-bar-chart" aria-hidden="true"></i>
-						<h3>Marketing</h3>
-						<div class="clearfix"></div>
-						<p>Ambuj was freelance social media manager at Blokada. He handled their official LinkidIn page.</p>
-					</div>
-					<div class="col-md-4 w3-icon-grid1">
-						<i class="fa fa-shopping-bag" aria-hidden="true"></i>
-						<h3>Leadership</h3>
-						<div class="clearfix"></div>
-						<p>He had various leadership position at IIM K and NISER Bhubaneswar </p>
-					</div>
-					<div class="clearfix"></div>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!-- //services -->
-
-<!--skills -->
-<div class="skills-agileinfo" id="skills">
-	<div class="container">
-		<h3 class="text-center">My skills</h3>
-				<div class="modal-spa">
-					<div class="skills"> 
-						<div class="col-md-6 bar-grids bargrids-left">
-							<h4> Technical Skills </h4>
-							<p>I have amassed a diverse skill set. </p>
-								<h6>Web designing and development <span> 80% </span></h6>
-							<div class="progress">
-																<div class="progress-bar progress-bar-striped active" style="width: 80%">
-								</div>
-							</div>
-							<h6>Python automation <span> 10% </span></h6>
-							<div class="progress  w3-agile">
-								<div class="progress-bar progress-bar-striped active" style="width: 10%">
-								</div>
-							</div>
-							<h6>Research<span>60% </span></h6>
-							<div class="progress  w3-agile">
-								<div class="progress-bar progress-bar-striped active" style="width: 60%">
-								</div>
-							</div>
-							<h6>Leadership <span> 75% </span></h6>
-							<div class="progress  w3-agile prgs-w3agile-last">
-								<div class="progress-bar progress-bar-striped active" style="width: 75%">
-								</div>
-							</div>
-						</div> 
-						<div class="col-md-6 bar-grids  w3-agile">
-							<h4> My Hobbies </h4>
-							<p>If I were asked what is your top hobby? My answer would be trekking and writing unambiguously. But over time I have developed a lot of hobbies :)</p>
-							<div class="col-md-4 hobbies-grid1 grid1">
-								<span class="fa fa-codepen"></span>
-								<h5>Coding</h5>
-							</div>
-							<div class="col-md-4 hobbies-grid1 grid2">
-								<span class="fa fa-hourglass"></span>
-								<h5>Research</h5>
-							</div>
-							<div class="col-md-4 hobbies-grid1 grid3">
-								<span class="fa fa-camera"></span>
-								<h5>Photography</h5>
-							</div>
-							<div class="clearfix"></div>
-							
-							<div class="col-md-4 hobbies-grid1 grid4">
-								<span class="fa fa-plane"></span>
-								<h5>Travelling</h5>
-							</div>
-							<div class="col-md-4 hobbies-grid1 grid5">
-								<span class="fa fa‑blog"></span>
-								<h5>Writing</h5>
-							</div>
-							<div class="col-md-4 hobbies-grid1 grid6">
-								<span class="fa fa-book"></span>
-								<h5>Reading</h5>
-							</div>
-							<div class="clearfix"></div>
-							
-						</div>
-						<div class="clearfix"> </div>	
-					</div>
-				</div> 
-		</div> 
-</div> 
-<!-- //skills -->
-
-<!--gallery-->
-	<div class="gallery" id="gallery">
-		<div class="container">
-		<div class="about-head text-center ">
-		<h3 class="text-center">My Gallery</h3>
-		</div>	
-			<div class="gallery-info">
-				<div class="col-md-3 gallery-grids">
-					<a href="IMG_20191022_153436.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191022_153436.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191022_153445.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191022_153445.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191113_194620.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191113_194620.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191214_140448.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191214_140448.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/alien-560710_1920.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/alien-560710_1920.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				
-				
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191103_234513.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191103_234513.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191113_193325.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191113_193325.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191113_193358.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191113_193358.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191214_154744.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191214_154744.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191214_141516.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191214_141516.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20191026_212407.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20191026_212407.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="col-md-3 gallery-grids">
-					<a href="images/IMG_20181101_142910_HDR.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="images/IMG_20181101_142910_HDR.jpg" alt="" class="img-responsive zoom-img">
-					</a>
-				</div>
-				<div class="clearfix"> </div>	
-			</div>
-			<script src="js/lightbox-plus-jquery.min.js"></script>
-		</div>
-</div>
-<!--//gallery-->
-
-<!-- stats -->
-	<div class="stats" id="stats">
-		<div class="container">
-		<h3 class="text-center">Stats</h3>
-			<div class="w3layouts_skills_grids">
-				<div class="col-md-3 w3ls_about_guage">
-					<canvas id="gauge1" width="200" height="100"></canvas>
-					<h4>Projects Done</h4>
-				</div>
-				<div class="col-md-3 w3ls_about_guage">
-					<canvas id="gauge2" width="200" height="100"></canvas>
-					<h4>Mobile Apps</h4>
-				</div>
-				<div class="col-md-3 w3ls_about_guage">
-					<canvas id="gauge3" width="200" height="100"></canvas>
-					<h4>Clients Success</h4>
-				</div>
-				<div class="col-md-3 w3ls_about_guage">
-					<canvas id="gauge4" width="200" height="100"></canvas>
-					<h4>Research</h4>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-<!-- //stats -->
-
-<!-- My experience -->
-<section class="experience" id="experience">
-	<div class="container">
-		<h3 class="text-center">Work Experience</h3>
-		<div class="col-md-5 exp_left">
-			<img src="images/ambuj-1.jpg" alt="picture of Ambuj Dhakad" />
-		</div>
-		<div class="col-md-7 exp_right">
-			<h3>My Experience</h3>
-			<p>Currently I am looking for new opportunities.</p>
-			<div class="exp_grids">
-				<div class="exp_grid1">
-					<h4>Elected Member - Calicut Marathon Committee, IIM Kozhikode</h4>
-					<h5>Feb 2023 - present</h5>
-					<p>Organized Calicut Marathon, India's largest student run marathon, with over 5000+ runners.<p>
-					<span class="fa fa-circle"></span>
-				<div class="exp_grid1">
-					<h4>Marketing Strategy and Operations at Servii, Bangalore</h4>
-					<h5>Feb 2022 - Jun 2022</h5>
-					<p>Achieved 200% increase in customer acquisition with automation of digital marketing promotion on social media <p>
-<p>Designed and implemented go-to-marketstrategy achieving 20%revenue growth by cost-benefit and customer need analysis <p>
-<p>Reduced customer TAT by 20%, developed a 8-week training program to raise clientsatisfaction and revenue to INR 10mn </p>
-					<span class="fa fa-circle"></span>
-			<div class="exp_grids">
-				<div class="exp_grid1">
-					<h4>Undergradute Student Researcher at NISER</h4>
-					<h5>2019-2021</h5>
-					<p>MSc. thesis research in spectroscopy. </p>
-					<span class="fa fa-circle"></span>
-				</div>
-				<div class="exp_grid1">
-					<h4>Social Media Manager and Translator at Blokada.</h4>
-					<h5>2020-Jan 2022</h5>
-					<p>I devote my free time in managing official LinkedIn page of Blokada. I have also  helped with translation of the android app in Hindi. </p>
-					<span class="fa fa-circle"></span>
-				</div>
-				<div class="exp_grid1">
-					<h4>Indian Academy of Sciences Fellow.</h4>
-					<h5>2018-2018</h5>
-					<p>Worked at BARC Mumbai as a project trainee. </p>
-					<span class="fa fa-circle"></span>
-				</div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-	</div> 
-</section> 
-<!-- //My experience -->
-
-<!-- comments -->
-<section class="comment-w3l" id="contact">
-	<div class="container">
-		<h3 class="text-center">Contact Me</h3>
-		<div class="col-lg-6 col-md-6 col-sm-6 comment-agile1" data-aos="flip-left">
-			<form action="#" method="post">
-                <div class="control-group form-group">
-                    <div class="controls">
-                        <input type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                        <p class="help-block"></p>
+    <!-- ABOUT -->
+    <section id="about" class="py-24 md:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-4">About Me</p>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Turning challenges<br>into <span class="t-grad">growth stories</span></h2>
+                    <p class="text-neutral-400 font-light leading-relaxed mb-6">I'm passionate about turning challenges into growth stories. With an MBA from IIM Kozhikode and an Integrated M.Sc. from NISER — featuring two peer-reviewed research papers and a contribution to a book published by Springer — I bring a blend of strategy, tech, and the mindset of a competitive problem solver to every project.</p>
+                    <p class="text-neutral-400 font-light leading-relaxed mb-6">Currently at EY Parthenon, I specialize in procurement transformation, direct cost reduction, and market entry strategy. Before consulting, I co-founded GAMERS TAG — a Gaming Super App for Esports & Gaming — where I led strategy, finance, and operations from zero to 4X social media growth.</p>
+                    <p class="text-neutral-400 font-light leading-relaxed mb-8">My journey spans from researching spectroscopy at NISER and BARC, to a fintech internship at RBI's Department of Supervision, to government consulting in Kerala — giving me a rare 360° perspective on how organizations create value.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="border border-neutral-800 text-neutral-400 text-xs font-medium px-4 py-2 rounded-full">Procurement</span>
+                        <span class="border border-neutral-800 text-neutral-400 text-xs font-medium px-4 py-2 rounded-full">Cost Reduction</span>
+                        <span class="border border-neutral-800 text-neutral-400 text-xs font-medium px-4 py-2 rounded-full">Market Entry</span>
+                        <span class="border border-neutral-800 text-neutral-400 text-xs font-medium px-4 py-2 rounded-full">Strategic Management</span>
+                        <span class="border border-neutral-800 text-neutral-400 text-xs font-medium px-4 py-2 rounded-full">Data Visualization</span>
+                        <span class="border border-neutral-800 text-neutral-400 text-xs font-medium px-4 py-2 rounded-full">Startup Strategy</span>
                     </div>
                 </div>
-				<div class="control-group form-group">
-                    <div class="controls">
-                        <input type="email" class="form-control" id="email" placeholder="Email Address" required="">
+                <div class="relative">
+                    <div class="relative overflow-hidden rounded-lg border border-neutral-800">
+                        <!-- REPLACE: Change the seed below to your own photo filename if you add one -->
+                        <img src="https://picsum.photos/seed/ambuj-professional/600/700.jpg" alt="Ambuj Dhakad" class="w-full h-auto object-cover" style="filter:grayscale(30%);opacity:.9">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-neutral-900 border border-neutral-800 rounded-lg p-5 shadow-2xl">
+                        <div class="flex items-center gap-3 mb-2"><iconify-icon icon="lucide:award" width="18" class="text-brand-red"></iconify-icon><span class="text-sm font-semibold">IAS Fellow — BARC</span></div>
+                        <p class="text-xs text-neutral-500">Indian Academy of Sciences</p>
+                    </div>
+                    <div class="absolute -top-6 -right-6 bg-neutral-900 border border-neutral-800 rounded-lg p-4 shadow-2xl hidden md:block">
+                        <div class="flex items-center gap-2 mb-1"><iconify-icon icon="lucide:graduation-cap" width="16" class="text-brand-red"></iconify-icon><span class="text-xs font-bold">Keio University</span></div>
+                        <p class="text-[10px] text-neutral-500">International Exchange, Japan</p>
                     </div>
                 </div>
-				<div class="control-group form-group">
-                    <div class="controls">
-                        <input type="text" class="form-control" id="name1" placeholder="Phone Number" required="">
-						<p class="help-block"></p>
-					</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section id="services" class="py-24 bg-neutral-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-4">What I Do</p>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Areas of <span class="t-grad">Expertise</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-lg p-8 hover:border-brand-red/50 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-neutral-800 group-hover:bg-brand-red rounded-lg flex items-center justify-center mb-6 transition-colors duration-300"><iconify-icon icon="lucide:target" width="22" class="text-white"></iconify-icon></div>
+                    <h3 class="text-xl font-bold mb-3">Procurement & Cost Reduction</h3>
+                    <p class="text-neutral-400 font-light leading-relaxed text-sm mb-6">Driving measurable savings through strategic sourcing, supplier rationalization, category management, and direct cost optimization across complex value chains.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Strategic Sourcing</li>
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Supplier Consolidation</li>
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Total Cost of Ownership</li>
+                    </ul>
                 </div>
-                <div class="control-group form-group">
-                    <div class="controls">
-                        <textarea rows="10" cols="100" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-lg p-8 hover:border-brand-red/50 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-neutral-800 group-hover:bg-brand-red rounded-lg flex items-center justify-center mb-6 transition-colors duration-300"><iconify-icon icon="lucide:globe" width="22" class="text-white"></iconify-icon></div>
+                    <h3 class="text-xl font-bold mb-3">Market Entry & Growth Strategy</h3>
+                    <p class="text-neutral-400 font-light leading-relaxed text-sm mb-6">Helping organizations identify and capture new market opportunities through rigorous analysis, competitive positioning, and actionable go-to-market roadmaps.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Market Sizing & Assessment</li>
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Go-to-Market Planning</li>
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Competitive Intelligence</li>
+                    </ul>
+                </div>
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-lg p-8 hover:border-brand-red/50 hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-neutral-800 group-hover:bg-brand-red rounded-lg flex items-center justify-center mb-6 transition-colors duration-300"><iconify-icon icon="lucide:bar-chart-3" width="22" class="text-white"></iconify-icon></div>
+                    <h3 class="text-xl font-bold mb-3">Analytics & Data-Driven Strategy</h3>
+                    <p class="text-neutral-400 font-light leading-relaxed text-sm mb-6">Leveraging data visualization and analytical frameworks to transform raw data into strategic insights that drive executive decision-making.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Data Visualization (EY Certified)</li>
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Financial Modeling</li>
+                        <li class="flex items-center gap-2 text-xs text-neutral-500"><iconify-icon icon="lucide:check" width="14" class="text-brand-red"></iconify-icon>Strategic Scenario Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 md:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-4">Portfolio</p>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Featured <span class="t-grad">Projects</span></h2>
+                <p class="text-neutral-400 font-light max-w-2xl mx-auto">A selection of high-impact engagements spanning consulting, entrepreneurship, public policy, and research. Click any project to explore details.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="fbtn active border border-neutral-700 text-neutral-400 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-150" data-filter="all">All</button>
+                <button class="fbtn border border-neutral-700 text-neutral-400 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-150 hover:border-neutral-500" data-filter="consulting">Consulting</button>
+                <button class="fbtn border border-neutral-700 text-neutral-400 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-150 hover:border-neutral-500" data-filter="startup">Startup</button>
+                <button class="fbtn border border-neutral-700 text-neutral-400 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-150 hover:border-neutral-500" data-filter="policy">Policy & Public</button>
+                <button class="fbtn border border-neutral-700 text-neutral-400 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-150 hover:border-neutral-500" data-filter="research">Research</button>
+            </div>
+            <div id="projectGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- P1 -->
+                <div class="project-card group cursor-pointer" data-category="consulting" onclick="openModal(0)">
+                    <div class="relative overflow-hidden rounded-lg border border-neutral-800 hover:border-red-600/50 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden"><img src="https://picsum.photos/seed/procurement-cost/600/450.jpg" alt="Procurement" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"></div>
+                        <div class="card-ov absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300"><span class="text-[10px] font-bold uppercase tracking-widest text-brand-red">View Details</span></div>
+                        <div class="absolute top-4 right-4"><span class="bg-black/60 backdrop-blur-sm text-[10px] font-bold uppercase tracking-widest text-white px-3 py-1 rounded-full">Consulting</span></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex items-center gap-2 mb-2"><span class="text-xs text-neutral-600">EY Parthenon</span><span class="text-neutral-700">·</span><span class="text-xs text-neutral-600">2024 – Present</span></div>
+                        <h3 class="text-lg font-bold group-hover:text-brand-red transition-colors duration-150">Procurement Cost Optimization</h3>
+                        <p class="text-sm text-neutral-500 mt-1">Led direct cost reduction initiatives across procurement categories for enterprise clients.</p>
                     </div>
                 </div>
-				<button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-		</div>
+                <!-- P2 -->
+                <div class="project-card group cursor-pointer" data-category="consulting" onclick="openModal(1)">
+                    <div class="relative overflow-hidden rounded-lg border border-neutral-800 hover:border-red-600/50 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden"><img src="https://picsum.photos/seed/market-entry-india/600/450.jpg" alt="Market Entry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"></div>
+                        <div class="card-ov absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300"><span class="text-[10px] font-bold uppercase tracking-widest text-brand-red">View Details</span></div>
+                        <div class="absolute top-4 right-4"><span class="bg-black/60 backdrop-blur-sm text-[10px] font-bold uppercase tracking-widest text-white px-3 py-1 rounded-full">Consulting</span></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex items-center gap-2 mb-2"><span class="text-xs text-neutral-600">EY Parthenon</span><span class="text-neutral-700">·</span><span class="text-xs text-neutral-600">2024 – Present</span></div>
+                        <h3 class="text-lg font-bold group-hover:text-brand-red transition-colors duration-150">New Market Entry Strategy</h3>
+                        <p class="text-sm text-neutral-500 mt-1">Developed market entry frameworks for India and Southeast Asian expansion opportunities.</p>
+                    </div>
+                </div>
+                <!-- P3 -->
+                <div class="project-card group cursor-pointer" data-category="startup" onclick="openModal(2)">
+                    <div class="relative overflow-hidden rounded-lg border border-neutral-800 hover:border-red-600/50 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden"><img src="https://picsum.photos/seed/gaming-esports-app/600/450.jpg" alt="Gamers Tag" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"></div>
+                        <div class="card-ov absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300"><span class="text-[10px] font-bold uppercase tracking-widest text-brand-red">View Details</span></div>
+                        <div class="absolute top-4 right-4"><span class="bg-black/60 backdrop-blur-sm text-[10px] font-bold uppercase tracking-widest text-white px-3 py-1 rounded-full">Startup</span></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex items-center gap-2 mb-2"><span class="text-xs text-neutral-600">GAMERS TAG</span><span class="text-neutral-700">·</span><span class="text-xs text-neutral-600">2023 – 2024</span></div>
+                        <h3 class="text-lg font-bold group-hover:text-brand-red transition-colors duration-150">GAMERS TAG — Gaming Super App</h3>
+                        <p class="text-sm text-neutral-500 mt-1">Co-founded and led strategy & finance for an Esports Super App, achieving 4X social media growth.</p>
+                    </div>
+                </div>
+                <!-- P4 -->
+                <div class="project-card group cursor-pointer" data-category="policy" onclick="openModal(3)">
+                    <div class="relative overflow-hidden rounded-lg border border-neutral-800 hover:border-red-600/50 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden"><img src="https://picsum.photos/seed/rbi-fintech-regulation/600/450.jpg" alt="RBI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"></div>
+                        <div class="card-ov absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300"><span class="text-[10px] font-bold uppercase tracking-widest text-brand-red">View Details</span></div>
+                        <div class="absolute top-4 right-4"><span class="bg-black/60 backdrop-blur-sm text-[10px] font-bold uppercase tracking-widest text-white px-3 py-1 rounded-full">Policy</span></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex items-center gap-2 mb-2"><span class="text-xs text-neutral-600">Reserve Bank of India</span><span class="text-neutral-700">·</span><span class="text-xs text-neutral-600">2023</span></div>
+                        <h3 class="text-lg font-bold group-hover:text-brand-red transition-colors duration-150">Fintech Supervision Framework</h3>
+                        <p class="text-sm text-neutral-500 mt-1">Contributed to fintech regulatory work in RBI's Department of Supervision.</p>
+                    </div>
+                </div>
+                <!-- P5 -->
+                <div class="project-card group cursor-pointer" data-category="policy" onclick="openModal(4)">
+                    <div class="relative overflow-hidden rounded-lg border border-neutral-800 hover:border-red-600/50 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden"><img src="https://picsum.photos/seed/kerala-government/600/450.jpg" alt="Kerala" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"></div>
+                        <div class="card-ov absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300"><span class="text-[10px] font-bold uppercase tracking-widest text-brand-red">View Details</span></div>
+                        <div class="absolute top-4 right-4"><span class="bg-black/60 backdrop-blur-sm text-[10px] font-bold uppercase tracking-widest text-white px-3 py-1 rounded-full">Policy</span></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex items-center gap-2 mb-2"><span class="text-xs text-neutral-600">Govt. of Kerala</span><span class="text-neutral-700">·</span><span class="text-xs text-neutral-600">2022</span></div>
+                        <h3 class="text-lg font-bold group-hover:text-brand-red transition-colors duration-150">Government Consulting — Kerala</h3>
+                        <p class="text-sm text-neutral-500 mt-1">Strategic consulting for the Government of Kerala, working with IAS officer Prasanth Nair.</p>
+                    </div>
+                </div>
+                <!-- P6 -->
+                <div class="project-card group cursor-pointer" data-category="research" onclick="openModal(5)">
+                    <div class="relative overflow-hidden rounded-lg border border-neutral-800 hover:border-red-600/50 transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden"><img src="https://picsum.photos/seed/spectroscopy-research-lab/600/450.jpg" alt="Research" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"></div>
+                        <div class="card-ov absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300"><span class="text-[10px] font-bold uppercase tracking-widest text-brand-red">View Details</span></div>
+                        <div class="absolute top-4 right-4"><span class="bg-black/60 backdrop-blur-sm text-[10px] font-bold uppercase tracking-widest text-white px-3 py-1 rounded-full">Research</span></div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex items-center gap-2 mb-2"><span class="text-xs text-neutral-600">NISER · NCL · BARC</span><span class="text-neutral-700">·</span><span class="text-xs text-neutral-600">2019 – 2022</span></div>
+                        <h3 class="text-lg font-bold group-hover:text-brand-red transition-colors duration-150">Spectroscopy & Materials Research</h3>
+                        <p class="text-sm text-neutral-500 mt-1">Research at NISER, NCL, and BARC resulting in 4 publications including a Springer chapter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<div class="col-lg-6 col-md-6 col-sm-6 comment-agile2" data-aos="flip-right">
-			<h4>Contact me for more details</h4>
+    <!-- MODAL -->
+    <div id="pModal" class="fixed inset-0 z-[100] hidden">
+        <div class="modal-bg absolute inset-0" onclick="closeModal()"></div>
+        <div class="relative z-10 h-full overflow-y-auto">
+            <div class="min-h-full flex items-start justify-center py-10 px-4">
+                <div class="bg-neutral-900 border border-neutral-800 rounded-lg max-w-3xl w-full shadow-2xl relative">
+                    <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-neutral-800 hover:bg-neutral-700 rounded-full flex items-center justify-center transition-colors"><iconify-icon icon="lucide:x" width="18" class="text-white"></iconify-icon></button>
+                    <div id="mContent" class="overflow-hidden rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-			<!-- /comments <p class="comment-w3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed insapien urna. Aenean Sed insapien urna in diam lacus. Nullam nisl urna, in consequat eget enim vitae, faucibus malesuada consectetur adipisc ingelit in consequat enim vitae</p>
-			
-			<h5><span class="fa fa-phone"></span> NA </h5>-->
-			<h5><span class="fa fa-envelope"></span> <a href="mailto:ambujdhakad65@gmail.com"> ambujdhakad65@gmail.com</a></h5>
-			<h5><span class="fa fa-map-marker"></span> IIM Kozhikode</h5>
-			<h5><span class="fa fa-linkedin"></span><a href="https://www.linkedin.com/in/ambujdhakad/"> LinkedIn profile</a></h5>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-24 bg-neutral-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-4">Career Path</p>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-10">Professional <span class="t-grad">Experience</span></h2>
+                    <div class="relative pl-8">
+                        <div class="tl-line absolute left-0 top-2 bottom-0 w-px"></div>
+                        <div class="relative mb-10">
+                            <div class="absolute -left-8 top-1 w-3 h-3 bg-brand-red rounded-full border-2 border-neutral-900"></div>
+                            <div class="flex items-center gap-3 mb-1"><h4 class="text-sm font-bold">Management Consultant</h4><span class="text-[10px] font-bold uppercase tracking-widest text-brand-red bg-brand-red/10 px-2 py-0.5 rounded">Current</span></div>
+                            <p class="text-xs text-neutral-600 mb-1">EY Parthenon · Aug 2024 – Present</p>
+                            <p class="text-xs text-neutral-600 mb-2">New Delhi, India</p>
+                            <p class="text-sm text-neutral-400 font-light leading-relaxed">Delivering procurement transformation, direct cost reduction, and market entry strategies for enterprise clients at EY's strategy consulting practice.</p>
+                        </div>
+                        <div class="relative mb-10">
+                            <div class="absolute -left-8 top-1 w-3 h-3 bg-neutral-600 rounded-full border-2 border-neutral-900"></div>
+                            <h4 class="text-sm font-bold mb-1">Co-Founder — Strategy & Finance</h4>
+                            <p class="text-xs text-neutral-600 mb-2">GAMERS TAG · 2023 – July 2024</p>
+                            <p class="text-sm text-neutral-400 font-light leading-relaxed">Led investments, financial operations, marketing, HR, strategic vision, and operational framework. Amplified social media presence 4X.</p>
+                        </div>
+                        <div class="relative mb-10">
+                            <div class="absolute -left-8 top-1 w-3 h-3 bg-neutral-600 rounded-full border-2 border-neutral-900"></div>
+                            <h4 class="text-sm font-bold mb-1">Special Summer Intern — Fintech</h4>
+                            <p class="text-xs text-neutral-600 mb-2">Reserve Bank of India · Apr – Jun 2023</p>
+                            <p class="text-sm text-neutral-400 font-light leading-relaxed">Worked in the Department of Supervision on fintech regulatory and supervisory frameworks.</p>
+                        </div>
+                        <div class="relative mb-10">
+                            <div class="absolute -left-8 top-1 w-3 h-3 bg-neutral-600 rounded-full border-2 border-neutral-900"></div>
+                            <h4 class="text-sm font-bold mb-1">Government Consultant</h4>
+                            <p class="text-xs text-neutral-600 mb-2">Govt. of Kerala (via IIM K) · Sep – Oct 2022</p>
+                            <p class="text-sm text-neutral-400 font-light leading-relaxed">Strategic consulting working directly with Prasanth Nair IAS on government policy initiatives.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-8 top-1 w-3 h-3 bg-neutral-700 rounded-full border-2 border-neutral-900"></div>
+                            <h4 class="text-sm font-bold mb-1">Social Media Manager</h4>
+                            <p class="text-xs text-neutral-600 mb-2">Blokada (Sweden) · Mar 2020 – Jan 2022</p>
+                            <p class="text-sm text-neutral-400 font-light leading-relaxed">Managed social media strategy for a Sweden-based open-source ad blocker, building a global community.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education -->
+                <div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-4 mt-2 md:mt-0">Education & Credentials</p>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-10">Background</h2>
+                    <div class="space-y-6">
+                        <div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1"><iconify-icon icon="lucide:graduation-cap" width="20" class="text-brand-red"></iconify-icon></div>
+                                <div>
+                                    <h4 class="text-sm font-bold mb-1">MBA — IIM Kozhikode</h4>
+                                    <p class="text-xs text-neutral-600 mb-2">June 2022 – April 2024</p>
+                                    <p class="text-sm text-neutral-400 font-light">Elected Member — Calicut Marathon Committee · Member, EPS Group · Executive Member, Toastmasters International Club</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1"><iconify-icon icon="lucide:plane" width="20" class="text-brand-red"></iconify-icon></div>
+                                <div>
+                                    <h4 class="text-sm font-bold mb-1">International Exchange — Keio University</h4>
+                                    <p class="text-xs text-neutral-600 mb-2">Japan · 2024</p>
+                                    <p class="text-sm text-neutral-400 font-light">Business Administration and Management exchange at Japan's oldest private university.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1"><iconify-icon icon="lucide:graduation-cap" width="20" class="text-brand-red"></iconify-icon></div>
+                                <div>
+                                    <h4 class="text-sm font-bold mb-1">Integrated M.Sc. — NISER</h4>
+                                    <p class="text-xs text-neutral-600 mb-2">Chemical Sciences · Aug 2016 – Aug 2021</p>
+                                    <p class="text-sm text-neutral-400 font-light">Premier institute under DAE. President — Hostel Executive Committee. Kabaddi captain at national-level IISM.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1"><iconify-icon icon="lucide:award" width="20" class="text-brand-red"></iconify-icon></div>
+                                <div>
+                                    <h4 class="text-sm font-bold mb-1">Honors & Awards</h4>
+                                    <p class="text-xs text-neutral-600 mb-2">Recognition</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="text-xs text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">IAS Fellow — BARC</span>
+                                        <span class="text-xs text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">DISHA Fellowship — DAE</span>
+                                        <span class="text-xs text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">School Topper</span>
+                                        <span class="text-xs text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">Head Prefect — National Level</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1"><iconify-icon icon="lucide:badge-check" width="20" class="text-brand-red"></iconify-icon></div>
+                                <div>
+                                    <h4 class="text-sm font-bold mb-1">Certifications</h4>
+                                    <p class="text-xs text-neutral-600 mb-2">Professional Development</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="text-xs text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">EY Data Visualization (Bronze)</span>
+                                        <span class="text-xs text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">HTML5</span>
+                                        <span class="text-xs text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">Embracing Change</span>
+                                        <span class="text-xs text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">Learn to Publish</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			
-											
-											
-			<!-- <h5><span class="fa fa-twitter"></span> twitter/@my_website</h5>
-			<h5><span class="fa fa-instagram"></span> instagram/@my_website</h5>-->
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="py-24 md:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-4">Academic Work</p>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Research & <span class="t-grad">Publications</span></h2>
+                <p class="text-neutral-400 font-light max-w-2xl mx-auto mt-4">Peer-reviewed research spanning spectroscopy, computational chemistry, and nanomaterials.</p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-5">
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-lg p-6 hover:border-brand-red/50 transition-all duration-300">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"><iconify-icon icon="lucide:file-text" width="18" class="text-brand-red"></iconify-icon></div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-1 group-hover:text-brand-red transition-colors">Gram-Scale Synthesis of 1,8-Naphthyridines in Water: The Friedlander Reaction Revisited</h4>
+                            <p class="text-xs text-neutral-600 mb-2">Peer-Reviewed Journal Paper</p>
+                            <p class="text-sm text-neutral-500 font-light">Developed a green chemistry approach for gram-scale synthesis of naphthyridine derivatives in aqueous medium, revisiting classical Friedlander reaction conditions for improved yield and sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-lg p-6 hover:border-brand-red/50 transition-all duration-300">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"><iconify-icon icon="lucide:file-text" width="18" class="text-brand-red"></iconify-icon></div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-1 group-hover:text-brand-red transition-colors">Quantification of the Electric Field Inside Protein Active Sites and Fullerenes</h4>
+                            <p class="text-xs text-neutral-600 mb-2">Peer-Reviewed Journal Paper</p>
+                            <p class="text-sm text-neutral-500 font-light">Applied computational methods to quantify internal electric fields in biological systems and carbon nanostructures, contributing to understanding of structure-function relationships.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-lg p-6 hover:border-brand-red/50 transition-all duration-300">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"><iconify-icon icon="lucide:book-open" width="18" class="text-brand-red"></iconify-icon></div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-1 group-hover:text-brand-red transition-colors">Two Dimensional Infrared Spectroscopy: A Structure Sensitive Technique with Ultrafast Time Resolution</h4>
+                            <p class="text-xs text-neutral-600 mb-2">Book Chapter — Springer</p>
+                            <p class="text-sm text-neutral-500 font-light">Contributed a chapter to a Springer-published book, detailing 2D-IR spectroscopy as a powerful structural probe with femtosecond time resolution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-lg p-6 hover:border-brand-red/50 transition-all duration-300">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"><iconify-icon icon="lucide:file-text" width="18" class="text-brand-red"></iconify-icon></div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-1 group-hover:text-brand-red transition-colors">Development of Water-Dispersible Curcumin Encapsulated Hydroxyapatite-Based Nano Formulations</h4>
+                            <p class="text-xs text-neutral-600 mb-2">Research — Institute of Nano Science and Technology (INST)</p>
+                            <p class="text-sm text-neutral-500 font-light">Developed novel hydroxyapatite-based nano-formulations for curcumin delivery with enhanced water dispersibility, bridging materials science and drug delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-4xl mx-auto mt-12 pt-12 border-t border-neutral-800">
+                <p class="text-xs font-bold uppercase tracking-widest text-neutral-600 mb-6 text-center">Research Affiliations</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-neutral-900 border border-neutral-800 rounded-lg p-4 text-center"><p class="text-xs font-bold text-neutral-300">NISER</p><p class="text-[10px] text-neutral-600 mt-1">Bhubaneswar</p></div>
+                    <div class="bg-neutral-900 border border-neutral-800 rounded-lg p-4 text-center"><p class="text-xs font-bold text-neutral-300">BARC</p><p class="text-[10px] text-neutral-600 mt-1">Mumbai</p></div>
+                    <div class="bg-neutral-900 border border-neutral-800 rounded-lg p-4 text-center"><p class="text-xs font-bold text-neutral-300">NCL</p><p class="text-[10px] text-neutral-600 mt-1">Pune</p></div>
+                    <div class="bg-neutral-900 border border-neutral-800 rounded-lg p-4 text-center"><p class="text-xs font-bold text-neutral-300">INST</p><p class="text-[10px] text-neutral-600 mt-1">Mohali</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		</div>
+    <!-- ENDORSEMENTS -->
+    <section id="testimonials" class="py-24 bg-neutral-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-4">Endorsements</p>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">What People <span class="t-grad">Say</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-8">
+                    <div class="flex gap-1 mb-4"><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon></div>
+                    <!-- REPLACE: Add a real quote from a colleague or mentor -->
+                    <p class="text-neutral-400 font-light leading-relaxed text-sm mb-6">"Ambuj brings a rare combination of analytical rigor and entrepreneurial energy. His ability to lead from the front while managing complex financial operations at GAMERS TAG was impressive for someone at his career stage."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-neutral-700 rounded-full flex items-center justify-center text-xs font-bold text-brand-red">GT</div>
+                        <div><p class="text-sm font-semibold">GAMERS TAG Team</p><p class="text-xs text-neutral-600">Co-founding Team Member</p></div>
+                    </div>
+                </div>
+                <div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-8">
+                    <div class="flex gap-1 mb-4"><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon></div>
+                    <!-- REPLACE: Add a real quote -->
+                    <p class="text-neutral-400 font-light leading-relaxed text-sm mb-6">"His research work demonstrated exceptional scientific temperament. The 2D-IR spectroscopy project required both theoretical depth and experimental precision — Ambuj delivered on both fronts consistently."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-neutral-700 rounded-full flex items-center justify-center text-xs font-bold text-brand-red">NCL</div>
+                        <div><p class="text-sm font-semibold">NCL Research Group</p><p class="text-xs text-neutral-600">National Chemical Laboratory, Pune</p></div>
+                    </div>
+                </div>
+                <div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-8">
+                    <div class="flex gap-1 mb-4"><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon><iconify-icon icon="lucide:star" width="16" class="text-brand-red"></iconify-icon></div>
+                    <!-- REPLACE: Add a real quote -->
+                    <p class="text-neutral-400 font-light leading-relaxed text-sm mb-6">"As Head Prefect and later as HEC President, Ambuj consistently showed he can lead diverse groups, manage competing priorities, and drive consensus — skills that translate perfectly to consulting."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-neutral-700 rounded-full flex items-center justify-center text-xs font-bold text-brand-red">NV</div>
+                        <div><p class="text-sm font-semibold">NISER Faculty</p><p class="text-xs text-neutral-600">Hostel Executive Committee Advisor</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<div class="clearfix"></div>
-	</div>
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 md:py-32 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-5" style="background:radial-gradient(circle,#DC2626,transparent)"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-red mb-4">Let's Connect</p>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Ready to tackle<br>your next <span class="t-grad">challenge?</span></h2>
+                    <p class="text-neutral-400 font-light leading-relaxed mb-10">Whether you need procurement optimization, market entry strategy, or a fresh perspective on growth — I'd love to discuss how I can help.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-neutral-800 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:mail" width="18" class="text-brand-red"></iconify-icon></div>
+                            <div><p class="text-xs text-neutral-600 mb-0.5">Email</p><p class="text-sm font-medium">ambujdhakad65@gmail.com</p></div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-neutral-800 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:linkedin" width="18" class="text-brand-red"></iconify-icon></div>
+                            <div><p class="text-xs text-neutral-600 mb-0.5">LinkedIn</p><a href="https://www.linkedin.com/in/ambujdhakad" target="_blank" rel="noopener noreferrer" class="text-sm font-medium hover:text-brand-red transition-colors">linkedin.com/in/ambujdhakad</a></div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-neutral-800 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:map-pin" width="18" class="text-brand-red"></iconify-icon></div>
+                            <div><p class="text-xs text-neutral-600 mb-0.5">Based In</p><p class="text-sm font-medium">New Delhi, India · Available Globally</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- REPLACE: action URL with your form backend (Formspree, Netlify Forms, etc.) -->
+                    <form id="cForm" class="space-y-5" action="#" method="POST">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div><label class="text-xs font-medium text-neutral-500 mb-2 block">First Name</label><input type="text" name="first_name" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-brand-red transition-colors" placeholder="Your name"></div>
+                            <div><label class="text-xs font-medium text-neutral-500 mb-2 block">Last Name</label><input type="text" name="last_name" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-brand-red transition-colors" placeholder="Last name"></div>
+                        </div>
+                        <div><label class="text-xs font-medium text-neutral-500 mb-2 block">Email</label><input type="email" name="email" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-brand-red transition-colors" placeholder="you@company.com"></div>
+                        <div><label class="text-xs font-medium text-neutral-500 mb-2 block">Company</label><input type="text" name="company" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-brand-red transition-colors" placeholder="Your organization"></div>
+                        <div><label class="text-xs font-medium text-neutral-500 mb-2 block">Area of Interest</label>
+                            <select name="interest" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors appearance-none cursor-pointer">
+                                <option value="" class="text-neutral-600">Select an area...</option>
+                                <option>Procurement & Cost Reduction</option>
+                                <option>Market Entry Strategy</option>
+                                <option>Strategic Management</option>
+                                <option>Data & Analytics</option>
+                                <option>Startup Advisory</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div><label class="text-xs font-medium text-neutral-500 mb-2 block">Message</label><textarea name="message" required rows="4" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-brand-red transition-colors resize-none" placeholder="Tell me about your challenge..."></textarea></div>
+                        <button type="submit" class="w-full bg-brand-red hover:bg-red-700 text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-lg transition-colors duration-150 flex items-center justify-center gap-2">Send Message <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon></button>
+                        <div id="fOk" class="hidden text-center py-3 bg-green-900/30 border border-green-800/50 rounded-lg"><p class="text-sm text-green-400 font-medium">Message sent! I'll get back to you within 24 hours.</p></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</section>
-<!-- /comments -->
-<div class="w3l_footer">
-		<div class="container">
-			<h3>Thanks for visiting my site</h3>
-				<div class="connect-social">  
-					<ul>
-						<li class="connect">Connect me with : </li>
+    <!-- FOOTER -->
+    <footer class="border-t border-neutral-800 py-12 bg-neutral-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center font-bold text-xs">AD</div>
+                    <span class="text-sm text-neutral-500">&copy; 2024 Ambuj Dhakad. All rights reserved.</span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="#about" class="text-xs text-neutral-600 hover:text-brand-red transition-colors">About</a>
+                    <a href="#projects" class="text-xs text-neutral-600 hover:text-brand-red transition-colors">Projects</a>
+                    <a href="#experience" class="text-xs text-neutral-600 hover:text-brand-red transition-colors">Experience</a>
+                    <a href="#publications" class="text-xs text-neutral-600 hover:text-brand-red transition-colors">Research</a>
+                    <a href="#contact" class="text-xs text-neutral-600 hover:text-brand-red transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-						<li><a href="https://www.linkedin.com/in/ambuj-dhakad/" class="social-button linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a></li>
-						
-					</ul>
-				</div>
-			<p class="agileits_w3ls_copyright">© 2020 Ambuj Dhakad. All rights reserved | Design by <!--<a href="https://w3layouts.com/"></a> -->Ambuj Dhakad and W3layouts</p>
-			<div class="arrow-container animated fadeInDown">
-				<a href="#home" class="arrow-2 scroll">
-					<i class="fa fa-angle-up"></i>
-				</a>
-				<div class="arrow-1 animated hinge infinite zoomIn"></div>
-			</div>
-		</div>
-	</div>
+    <script>
+    // ===== PROJECT DATA =====
+    const P=[
+        {t:"Procurement Cost Optimization",c:"EY Parthenon",ind:"Management Consulting",y:"2024 – Present",cat:"Consulting",img:"https://picsum.photos/seed/procurement-cost/900/500.jpg",dur:"Ongoing",team:"Cross-functional engagement team",
+        ch:"Enterprise clients across sectors were struggling with fragmented procurement processes, limited visibility into direct costs, and missed savings opportunities due to unstructured supplier relationships and reactive purchasing behaviors.",
+        ap:"Applied EY's proven procurement transformation methodology — conducting spend analytics, supplier market assessments, and category strategy development. Built total cost of ownership models, identified consolidation opportunities, and designed strategic sourcing roadmaps with clear implementation governance.",
+        r:[{m:"Cost Savings",v:"Significant",d:"Direct cost reduction across categories"},{m:"Supplier Base",v:"Rationalized",d:"Consolidated vendor landscape"},{m:"Process Efficiency",v:"Improved",d:"Structured procurement workflows"},{m:"Visibility",v:"Enhanced",d:"Data-driven spend analytics"}],
+        q:"A structured approach to procurement that turns cost centers into competitive advantages.",qa:"EY Parthenon Engagement"},
+        {t:"New Market Entry Strategy",c:"EY Parthenon",ind:"Strategy Consulting",y:"2024 – Present",cat:"Consulting",img:"https://picsum.photos/seed/market-entry-india/900/500.jpg",dur:"Ongoing",team:"Strategy team",
+        ch:"A global client looking to expand into India and Southeast Asian markets needed a rigorous assessment of market attractiveness, competitive dynamics, entry mode options, and a phased roadmap to de-risk their expansion.",
+        ap:"Conducted comprehensive market sizing using bottom-up and top-down approaches. Analyzed competitive landscape, regulatory environment, and customer segments. Built financial models to evaluate entry modes and developed a prioritized market-by-market entry playbook.",
+        r:[{m:"Markets Assessed",v:"4+",d:"India and key SE Asian economies"},{m:"Entry Roadmap",v:"Delivered",d:"Phased 3-year market entry plan"},{m:"Financial Model",v:"Built",d:"Scenario-based P&L and ROI analysis"},{m:"Risk Framework",v:"Created",d:"Market-specific risk mitigation"}],
+        q:"Rigorous analysis that gave the board the confidence to commit to a new geography.",qa:"EY Parthenon Engagement"},
+        {t:"GAMERS TAG — Gaming Super App",c:"GAMERS TAG",ind:"Esports & Gaming Startup",y:"2023 – 2024",cat:"Startup",img:"https://picsum.photos/seed/gaming-esports-app/900/500.jpg",dur:"~1.5 years",team:"Co-founding team",
+        ch:"India's gaming and esports market was exploding but fragmented. Building a super app that could serve as a unified platform for gamers, tournament organizers, and content creators required capital efficiency, rapid user acquisition, and a compelling product vision.",
+        ap:"As Co-Founder leading Strategy & Finance, I built the financial model, managed investment pipeline, designed the operational framework, and orchestrated marketing initiatives. Led HR processes to build the core team and defined the strategic vision from zero to launch.",
+        r:[{m:"Social Media Growth",v:"4X",d:"Amplified presence across platforms"},{m:"Platform",v:"Launched",d:"Gaming Super App went live"},{m:"Operations",v:"Built",d:"End-to-end operational framework"},{m:"Brand",v:"Established",d:"Recognized identity in Indian gaming"}],
+        q:"Ambuj's ability to juggle finance, strategy, and operations simultaneously in a startup environment was remarkable.",qa:"GAMERS TAG Co-Founder"},
+        {t:"Fintech Supervision Framework",c:"Reserve Bank of India",ind:"Financial Regulation",y:"2023",cat:"Policy & Public Sector",img:"https://picsum.photos/seed/rbi-fintech-regulation/900/500.jpg",dur:"3 months",team:"Department of Supervision team",
+        ch:"India's fintech sector was growing at an unprecedented pace, creating new challenges for the RBI's supervisory framework. The central bank needed to understand emerging risks while balancing innovation with financial stability.",
+        ap:"As a Special Summer Intern in the Department of Supervision, I contributed to research and analysis on fintech business models, risk assessment frameworks, and supervisory approaches. Engaged with regulatory guidelines and assessed how emerging fintech activities mapped to existing supervisory constructs.",
+        r:[{m:"Research Output",v:"Delivered",d:"Analytical contributions to supervisory discussions"},{m:"Fintech Models",v:"Mapped",d:"Catalogued emerging business models"},{m:"Regulatory Insight",v:"Gained",d:"Deep understanding of fintech regulation"},{m:"Exposure",v:"RBI Level",d:"Direct experience with India's central bank"}],
+        q:"One of the most competitive internship programs in India — the experience was transformative.",qa:"RBI Intern Reflection"},
+        {t:"Government Consulting — Kerala",c:"Government of Kerala",ind:"Public Administration",y:"2022",cat:"Policy & Public Sector",img:"https://picsum.photos/seed/kerala-government/900/500.jpg",dur:"2 months",team:"IIM Kozhikode consulting team",
+        ch:"The Government of Kerala sought strategic consulting support from IIM Kozhikode for policy initiatives. Working directly with a senior IAS officer, the engagement required quickly understanding administrative complexities and delivering actionable recommendations.",
+        ap:"Applied management consulting frameworks to public sector challenges. Conducted stakeholder analysis, reviewed existing policies and outcomes, benchmarked against best practices from other states, and developed implementation-ready recommendations.",
+        r:[{m:"Policy Input",v:"Delivered",d:"Actionable recommendations to government"},{m:"Stakeholder Alignment",v:"Achieved",d:"Bridged administrative and analytical perspectives"},{m:"Framework",v:"Applied",d:"Private-sector rigor to public-sector problems"},{m:"Mentorship",v:"IAS Officer",d:"Direct guidance from Prasanth Nair IAS"}],
+        q:"Bringing consulting discipline to governance — that's where real impact happens.",qa:"IIM Kozhikode Engagement"},
+        {t:"Spectroscopy & Materials Research",c:"NISER · NCL · BARC · INST",ind:"Chemical Sciences Research",y:"2019 – 2022",cat:"Research",img:"https://picsum.photos/seed/spectroscopy-research-lab/900/500.jpg",dur:"3+ years",team:"Multiple research groups",
+        ch:"Advancing fundamental understanding in spectroscopy and nanomaterials required working across multiple premier Indian research institutions, each with distinct focus areas — from ultrafast spectroscopy at NCL to nanomaterials at INST to nuclear science at BARC.",
+        ap:"Conducted M.Sc. thesis research in spectroscopy at NISER. Completed a research internship at NCL on 2D-IR spectroscopy. Worked as an Indian Academy of Sciences Fellow at BARC. Developed nano-formulations at INST. Each experience built on the last, creating a unique multidisciplinary research profile.",
+        r:[{m:"Publications",v:"4",d:"Including a Springer book chapter"},{m:"IAS Fellowship",v:"Awarded",d:"Indian Academy of Sciences Fellow at BARC"},{m:"DISHA Fellowship",v:"Awarded",d:"Department of Atomic Energy fellowship"},{m:"Institutions",v:"4",d:"NISER, NCL, BARC, INST"}],
+        q:"Research taught me that the best solutions come from deeply understanding the problem before jumping to answers.",qa:"Research Philosophy"}
+    ];
 
+    function openModal(i){
+        const p=P[i],m=document.getElementById('pModal'),c=document.getElementById('mContent');
+        c.innerHTML=`<img src="${p.img}" alt="${p.t}" class="w-full h-64 object-cover"><div class="p-8"><div class="flex flex-wrap items-center gap-3 mb-3"><span class="bg-brand-red/10 text-brand-red text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">${p.cat}</span><span class="text-xs text-neutral-600">${p.ind}</span><span class="text-neutral-700">·</span><span class="text-xs text-neutral-600">${p.y}</span></div><h3 class="text-2xl font-bold mb-1">${p.t}</h3><p class="text-sm text-neutral-500 mb-6">${p.c} · ${p.dur} · ${p.team}</p><div class="space-y-6"><div><h4 class="text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">The Challenge</h4><p class="text-sm text-neutral-400 font-light leading-relaxed">${p.ch}</p></div><div><h4 class="text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">My Approach</h4><p class="text-sm text-neutral-400 font-light leading-relaxed">${p.ap}</p></div><div><h4 class="text-xs font-bold uppercase tracking-widest text-neutral-500 mb-4">Key Outcomes</h4><div class="grid grid-cols-2 gap-4">${p.r.map(x=>`<div class="bg-neutral-800/50 border border-neutral-800 rounded-lg p-4"><div class="text-2xl font-bold text-brand-red mb-1">${x.v}</div><div class="text-xs font-semibold text-white mb-0.5">${x.m}</div><div class="text-xs text-neutral-600">${x.d}</div></div>`).join('')}</div></div><div class="bg-neutral-800/30 border-l-2 border-brand-red rounded-r-lg p-5"><p class="text-sm text-neutral-300 italic font-light leading-relaxed">"${p.q}"</p><p class="text-xs text-neutral-600 mt-2">— ${p.qa}</p></div></div></div>`;
+        m.classList.remove('hidden');document.body.style.overflow='hidden';
+    }
+    function closeModal(){document.getElementById('pModal').classList.add('hidden');document.body.style.overflow='';}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 
-	<!--//footer -->
+    // ===== FILTERS =====
+    document.querySelectorAll('.fbtn').forEach(b=>{b.addEventListener('click',()=>{
+        document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+        const f=b.dataset.filter;
+        document.querySelectorAll('.project-card').forEach((c,i)=>{
+            const s=f==='all'||c.dataset.category.includes(f);
+            if(s){c.style.display='';c.classList.remove('visible');setTimeout(()=>c.classList.add('visible'),i*100);}
+            else{c.style.display='none';c.classList.remove('visible');}
+        });
+    });});
 
+    // ===== SCROLL OBSERVER =====
+    const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:.1});
+    document.querySelectorAll('.project-card').forEach(c=>obs.observe(c));
 
-<!-- Default-JavaScript-File -->
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- //Default-JavaScript-File -->
+    // ===== STAT COUNTER =====
+    const sObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){
+        const el=x.target,t=parseInt(el.dataset.count),s=el.dataset.suffix||'';let c=0;const step=Math.max(1,Math.ceil(t/30));
+        const iv=setInterval(()=>{c+=step;if(c>=t){c=t;clearInterval(iv);}el.textContent=c+s;},40);sObs.unobserve(el);
+    }});},{threshold:.5});
+    document.querySelectorAll('[data-count]').forEach(el=>sObs.observe(el));
 
-<!-- gauge-meter -->
-	<script src="js/jquery.gauge.js"></script>
-	<script>
-		$(document).ready(function (){
-			$("#gauge1").gauge(90,{color: "#ff4f81",unit: " %",type: "halfcircle"});
-			$("#gauge2").gauge(70, {color: "#2dde98", unit: " %",type: "halfcircle"});
-			$("#gauge3").gauge(75, {color: "#00aeff",unit: " %",type: "halfcircle"});
-			$("#gauge4").gauge(40, {color: "#ffb900",unit: " %",type: "halfcircle"});
-		});
-	</script>
-<!-- //gauge-meter -->
+    // ===== NAVBAR =====
+    window.addEventListener('scroll',()=>{
+        document.getElementById('navbar').style.borderBottom=scrollY>100?'1px solid #262626':'none';
+        ['about','services','projects','experience','publications','testimonials','contact'].forEach(id=>{
+            const s=document.getElementById(id),l=document.querySelector(`.nl[href="#${id}"]`);
+            if(s&&l){const r=s.getBoundingClientRect();if(r.top<=150&&r.bottom>150){document.querySelectorAll('.nl').forEach(x=>x.classList.remove('nav-active'));l.classList.add('nav-active');}}
+        });
+    });
 
-<!--menu script-->
-<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
-		<script src="js/jquery.fatNav.js"></script>
-		<script>
-		(function() {
-			
-			$.fatNav();
-			
-		}());
-		</script>
+    // ===== MOBILE MENU =====
+    document.getElementById('mobBtn').addEventListener('click',()=>document.getElementById('mobMenu').classList.toggle('hidden'));
+    document.querySelectorAll('.ml').forEach(l=>l.addEventListener('click',()=>document.getElementById('mobMenu').classList.add('hidden')));
 
-<!--Start-slider-script-->
-	<script defer src="js/jquery.flexslider.js"></script>
-		<script type="text/javascript">
-		
-		$(window).load(function(){
-		  $('.flexslider').flexslider({
-			animation: "slide",
-			start: function(slider){
-			  $('body').removeClass('loading');
-			}
-		  });
-		});
-	  </script>
-<!--End-slider-script-->
-
-<!-- smooth scrolling -->
-	<script src="js/SmoothScroll.min.js"></script>
-<!-- smooth scrolling -->
-
-<!-- scrolling script -->
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script> 
-<!-- //scrolling script -->
-	
-	
+    // ===== CONTACT FORM =====
+    document.getElementById('cForm').addEventListener('submit',e=>{
+        e.preventDefault();const b=e.target.querySelector('button[type="submit"]');
+        b.innerHTML='<iconify-icon icon="lucide:loader-2" width="16" class="animate-spin"></iconify-icon> Sending...';b.disabled=true;
+        setTimeout(()=>{b.innerHTML='<iconify-icon icon="lucide:check" width="16"></iconify-icon> Sent!';b.classList.remove('bg-brand-red','hover:bg-red-700');b.classList.add('bg-green-600');
+        document.getElementById('fOk').classList.remove('hidden');
+        setTimeout(()=>{b.innerHTML='Send Message <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon>';b.classList.add('bg-brand-red','hover:bg-red-700');b.classList.remove('bg-green-600');b.disabled=false;e.target.reset();document.getElementById('fOk').classList.add('hidden');},4000);
+        },1500);
+    });
+    </script>
 </body>
-<!-- //Body -->
 </html>
