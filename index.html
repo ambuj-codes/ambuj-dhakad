@@ -4,121 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ambuj Dhakad — Senior Strategy Consultant</title>
-    <meta name="description" content="Senior Consultant at EY Parthenon | Strategy & Operations | IIM Kozhikode | NISER">
+    <meta name="description" content="Senior Consultant at EY Parthenon | Strategy & Operations | Oil & Gas, Manufacturing, GenAI | IIM Kozhikode | NISER">
     <meta name="author" content="Ambuj Dhakad">
-    
-    <!-- Direct SVG Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f172a'/><path d='M28 75 L45 25 L55 25 L72 75 H59 L54 60 H36 L31 75 Z M39 48 H51 L45 30 Z' fill='%23ffffff'/><path d='M25 65 L48 42 L60 52 L80 25 M80 25 H66 M80 25 V39' stroke='%2338bdf8' stroke-width='7' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230a1929'/><path d='M28 75 L45 25 L55 25 L72 75 H59 L54 60 H36 L31 75 Z M39 48 H51 L45 30 Z' fill='%23ffffff'/><path d='M25 65 L48 42 L60 52 L80 25 M80 25 H66 M80 25 V39' stroke='%23dc6e0f' stroke-width='7' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        inter: ['Inter', 'system-ui', 'sans-serif'],
-                        playfair: ['Playfair Display', 'Georgia', 'serif']
+                        sans: ['Manrope', 'system-ui', 'sans-serif'],
+                        display: ['Fraunces', 'Georgia', 'serif'],
+                        mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
                     },
                     colors: {
-                        navy: { 50:'#f0f4ff', 100:'#e0eaff', 200:'#c2d5ff', 300:'#94b4ff', 400:'#6087ff', 500:'#3b5bfc', 600:'#2541f5', 700:'#1d31e1', 800:'#1e29af', 900:'#1e2489', 950:'#141752' },
-                        slate: { 50:'#f8fafc', 100:'#f1f5f9', 150:'#eaeff5', 200:'#e2e8f0', 300:'#cbd5e1', 400:'#94a3b8', 500:'#64748b', 600:'#475569', 700:'#334155', 800:'#1e293b', 900:'#0f172a', 950:'#020617' }
+                        ink: { 50:'#F2F7FA',100:'#E4EDF4',200:'#C3D6E3',300:'#93B4CB',400:'#5C89A9',500:'#3A6789',600:'#2A5070',700:'#1F3E59',800:'#152E44',900:'#0A1929',950:'#050F1B' },
+                        copper: { 50:'#FDF4E8',100:'#FAE4CB',200:'#F5C693',300:'#EFA457',400:'#E9872B',500:'#DC6E0F',600:'#C05A0B',700:'#9C470E',800:'#7E3B12',900:'#673212' },
+                        slate: { 50:'#f8fafc',100:'#f1f5f9',150:'#eaeff5',200:'#e2e8f0',300:'#cbd5e1',400:'#94a3b8',500:'#64748b',600:'#475569',700:'#334155',800:'#1e293b',900:'#0f172a',950:'#020617' }
                     }
                 }
             }
         }
     </script>
     <style>
-        ::selection { background: #1e29af; color: #fff; }
-        ::-webkit-scrollbar { width: 7px; }
+        ::selection { background: #0a1929; color: #fff; }
+        ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #f1f5f9; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-        html { font-family: 'Inter', system-ui, sans-serif; }
+        ::-webkit-scrollbar-thumb:hover { background: #dc6e0f; }
+        html { font-family: 'Manrope', system-ui, sans-serif; }
         body { background: #ffffff; color: #1e293b; }
+        section[id] { scroll-margin-top: 84px; }
+
+        /* ===== BRAND HIGHLIGHT (light backgrounds) ===== */
+        .brand {
+            font-weight: 800;
+            color: #0A1929;
+            background-image: linear-gradient(120deg, rgba(220,110,15,.28) 0%, rgba(233,135,43,.16) 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 42%;
+            background-position: 0 82%;
+            padding: 0 3px;
+            border-radius: 2px;
+        }
+        .brand-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+            background: #fff;
+            color: #64748b;
+            font-weight: 700;
+            font-size: 14px;
+            transition: all .25s cubic-bezier(.22,1,.36,1);
+        }
+        .brand-chip:hover {
+            color: #0A1929;
+            border-color: #F5C693;
+            box-shadow: 0 10px 24px -10px rgba(220,110,15,.25);
+            transform: translateY(-2px);
+        }
+        .brand-chip iconify-icon { color: #DC6E0F; }
+
         @keyframes fadeUp { 0%{opacity:0;transform:translateY(24px)} 100%{opacity:1;transform:translateY(0)} }
         .anim-up { animation: fadeUp .7s cubic-bezier(.22,1,.36,1) forwards; opacity:0; }
-        .d1{animation-delay:.1s} .d2{animation-delay:.2s} .d3{animation-delay:.3s}
+        .d1{animation-delay:.12s} .d2{animation-delay:.24s} .d3{animation-delay:.36s}
         .project-card { opacity:0; }
         .project-card.visible { animation: fadeUp .6s cubic-bezier(.22,1,.36,1) forwards; }
         .nav-link { position: relative; }
-        .nav-link::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:#1e29af; transition:width .25s ease; }
+        .nav-link::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:#dc6e0f; transition:width .25s ease; }
         .nav-link:hover::after, .nav-link.active::after { width:100%; }
-        .nav-link.active { color: #1e29af; }
+        .nav-link.active { color: #0a1929; }
         .card-hover { transition: all .3s cubic-bezier(.22,1,.36,1); }
-        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -12px rgba(30,41,175,.12); }
+        .card-hover:hover { transform: translateY(-5px); border-color: #f5c693; box-shadow: 0 24px 48px -16px rgba(220,110,15,.16); }
+        .img-zoom { overflow: hidden; }
         .img-zoom img { transition: transform .7s cubic-bezier(.22,1,.36,1); }
-        .img-zoom:hover img { transform: scale(1.05); }
-        .gradient-text { background: linear-gradient(135deg, #1e29af 0%, #3b5bfc 50%, #0f766e 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-        .hero-overlay { background: linear-gradient(135deg, rgba(15,23,42,.85) 0%, rgba(30,41,175,.7) 50%, rgba(15,118,110,.5) 100%); }
+        .img-zoom:hover img { transform: scale(1.06); }
+        .gradient-text { background: linear-gradient(100deg, #c05a0b 0%, #dc6e0f 45%, #efa457 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+        .hero-overlay { background: linear-gradient(115deg, rgba(5,15,27,.95) 0%, rgba(10,25,41,.85) 45%, rgba(220,110,15,.30) 100%); }
+        .dots-pattern { background-image: radial-gradient(rgba(255,255,255,.07) 1px, transparent 1px); background-size: 22px 22px; }
+        .grid-overlay { background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 64px 64px; }
         .section-bg { background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%); }
-        .modal-bg { background: rgba(15,23,42,.5); backdrop-filter: blur(12px); }
-        .fbtn.active { background: #1e29af; color: #fff; border-color: #1e29af; box-shadow: 0 4px 12px rgba(30,41,175,.25); }
-        .tl-line { background: linear-gradient(to bottom, #1e29af, #e2e8f0, transparent); }
-        .stat-card { background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%); }
-        input:focus, textarea:focus, select:focus { box-shadow: 0 0 0 3px rgba(30,41,175,.1); }
+        .modal-bg { background: rgba(5,15,27,.55); backdrop-filter: blur(12px); }
+        .fbtn.active { background: #0a1929; color: #fff; border-color: #0a1929; box-shadow: 0 4px 12px rgba(10,25,41,.25); }
+        .tl-line { background: linear-gradient(to bottom, #dc6e0f, #e2e8f0 70%, transparent); }
+        .stat-card { background: linear-gradient(135deg, #fdf4e8 0%, #ffffff 60%); }
+        input:focus, textarea:focus, select:focus { box-shadow: 0 0 0 3px rgba(220,110,15,.12); }
         .profile-img { object-position: top center; }
+        .accent-bar { width: 44px; height: 4px; background: linear-gradient(90deg, #dc6e0f, #efa457); border-radius: 2px; }
+        .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: .25em; text-transform: uppercase; }
     </style>
 </head>
-<body class="font-inter antialiased">
+<body class="font-sans antialiased">
 
     <!-- NAVIGATION -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center transition-all duration-300 bg-white/80 backdrop-blur-xl border-b border-transparent">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center transition-all duration-300 bg-white/85 backdrop-blur-xl border-b border-transparent">
         <div class="max-w-6xl mx-auto w-full px-6 flex items-center justify-between">
             <a href="#hero" class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-navy-800 rounded-xl flex items-center justify-center font-bold text-white text-sm tracking-tight shadow-md shadow-navy-800/20">AD</div>
+                <div class="w-10 h-10 bg-ink-900 rounded-xl flex items-center justify-center font-bold text-white text-sm tracking-tight shadow-md shadow-ink-900/20 relative">
+                    AD<span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-copper-500 rounded-full border-2 border-white"></span>
+                </div>
                 <div class="hidden sm:block">
-                    <span class="text-sm font-bold text-slate-900 tracking-tight block leading-tight">Ambuj Dhakad</span>
-                    <span class="text-[10px] text-slate-400 font-medium tracking-wide uppercase">Senior Consultant</span>
+                    <span class="text-sm font-bold text-ink-900 tracking-tight block leading-tight">Ambuj Dhakad</span>
+                    <span class="font-mono text-[9px] text-copper-600 font-semibold tracking-[0.2em] uppercase">Strategy · Operations</span>
                 </div>
             </a>
             <div class="hidden lg:flex items-center gap-7">
-                <a href="#about" class="nav-link text-[13px] font-medium text-slate-500 hover:text-navy-800 transition-colors">About</a>
-                <a href="#services" class="nav-link text-[13px] font-medium text-slate-500 hover:text-navy-800 transition-colors">Expertise</a>
-                <a href="#experience" class="nav-link text-[13px] font-medium text-slate-500 hover:text-navy-800 transition-colors">Experience</a>
-                <a href="#projects" class="nav-link text-[13px] font-medium text-slate-500 hover:text-navy-800 transition-colors">Impact</a>
-                <a href="#publications" class="nav-link text-[13px] font-medium text-slate-500 hover:text-navy-800 transition-colors">Research</a>
-                <a href="#contact" class="bg-navy-800 hover:bg-navy-900 text-white text-xs font-semibold tracking-wide px-5 py-2.5 rounded-xl transition-all duration-200 shadow-md shadow-navy-800/20 hover:shadow-lg hover:shadow-navy-800/30">Get in Touch</a>
+                <a href="#about" class="nav-link text-[13px] font-semibold text-slate-500 hover:text-ink-900 transition-colors">About</a>
+                <a href="#services" class="nav-link text-[13px] font-semibold text-slate-500 hover:text-ink-900 transition-colors">Expertise</a>
+                <a href="#experience" class="nav-link text-[13px] font-semibold text-slate-500 hover:text-ink-900 transition-colors">Experience</a>
+                <a href="#projects" class="nav-link text-[13px] font-semibold text-slate-500 hover:text-ink-900 transition-colors">Impact</a>
+                <a href="#publications" class="nav-link text-[13px] font-semibold text-slate-500 hover:text-ink-900 transition-colors">Research</a>
+                <a href="#contact" class="bg-ink-900 hover:bg-ink-800 text-white text-xs font-bold tracking-wide px-5 py-2.5 rounded-xl transition-all duration-200 shadow-md shadow-ink-900/20 hover:shadow-lg hover:shadow-ink-900/30">Get in Touch</a>
             </div>
             <button id="mobBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl hover:bg-slate-100 transition-colors">
-                <iconify-icon icon="lucide:menu" width="20" class="text-slate-700"></iconify-icon>
+                <iconify-icon icon="lucide:menu" width="20" class="text-ink-900"></iconify-icon>
             </button>
         </div>
         <div id="mobMenu" class="hidden absolute top-[72px] left-0 right-0 bg-white border-b border-slate-200 shadow-xl shadow-slate-200/50 lg:hidden">
             <div class="px-6 py-5 flex flex-col gap-1">
-                <a href="#about" class="ml text-sm font-medium text-slate-600 hover:text-navy-800 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">About</a>
-                <a href="#services" class="ml text-sm font-medium text-slate-600 hover:text-navy-800 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">Expertise</a>
-                <a href="#experience" class="ml text-sm font-medium text-slate-600 hover:text-navy-800 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">Experience</a>
-                <a href="#projects" class="ml text-sm font-medium text-slate-600 hover:text-navy-800 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">Impact</a>
-                <a href="#publications" class="ml text-sm font-medium text-slate-600 hover:text-navy-800 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">Research</a>
-                <a href="#contact" class="bg-navy-800 text-white text-sm font-semibold px-4 py-3 rounded-xl text-center mt-2">Get in Touch</a>
+                <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-ink-900 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">About</a>
+                <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-ink-900 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">Expertise</a>
+                <a href="#experience" class="text-sm font-semibold text-slate-600 hover:text-ink-900 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">Experience</a>
+                <a href="#projects" class="text-sm font-semibold text-slate-600 hover:text-ink-900 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">Impact</a>
+                <a href="#publications" class="text-sm font-semibold text-slate-600 hover:text-ink-900 hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors">Research</a>
+                <a href="#contact" class="bg-ink-900 text-white text-sm font-bold px-4 py-3 rounded-xl text-center mt-2">Get in Touch</a>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section id="hero" class="relative min-h-[92vh] flex items-center overflow-hidden">
-        <img src="https://picsum.photos/seed/professional-office-modern/1920/1080.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+    <section id="hero" class="relative min-h-[92vh] flex items-center overflow-hidden bg-ink-950">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1920&q=80" alt="" class="absolute inset-0 w-full h-full object-cover"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/strategy-consulting/1920/1080.jpg';">
         <div class="hero-overlay absolute inset-0"></div>
+        <div class="absolute inset-0 grid-overlay"></div>
         <div class="relative z-10 max-w-6xl mx-auto px-6 w-full">
             <div class="max-w-2xl">
+                <img src="images/ambuj-photo.jpg" alt="Ambuj Dhakad" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover object-top ring-2 ring-copper-400/60 shadow-xl shadow-black/30 mb-7 anim-up"
+                     onerror="this.onerror=null;this.style.display='none';">
                 <div class="anim-up">
-                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 text-white/90 text-[11px] font-semibold uppercase tracking-[0.15em] px-4 py-2 rounded-full mb-8">
-                        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-                        EY Parthenon · IIM Kozhikode · NISER
+                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-copper-300/30 text-white/90 text-[11px] font-semibold uppercase tracking-[0.15em] px-4 py-2 rounded-full mb-8">
+                        <span class="w-2 h-2 bg-copper-400 rounded-full animate-pulse"></span>
+                        <span class="font-bold text-white">EY Parthenon</span> · <span class="font-bold text-white">IIM Kozhikode</span> · <span class="font-bold text-white">NISER</span>
                     </span>
                 </div>
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.08] tracking-tight mb-6 anim-up d1">
-                    Ambuj<br><span class="font-playfair font-semibold" style="color:#93b4ff">Dhakad</span>
+                <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-semibold text-white leading-[1.06] tracking-tight mb-6 anim-up d1">
+                    Ambuj<br><span class="italic" style="color:#efa457">Dhakad</span>
                 </h1>
-                <p class="text-lg md:text-xl text-white/70 font-light leading-relaxed mb-10 max-w-lg anim-up d2">
-                    Senior Strategy Consultant turning complex challenges into massive organizational growth through Lean Six Sigma, Generative AI, and data-driven problem solving.
+                <div class="accent-bar mb-6 anim-up d1"></div>
+                <p class="text-lg md:text-xl text-white/75 font-light leading-relaxed mb-10 max-w-lg anim-up d2">
+                    Senior Strategy Consultant turning complex challenges into measurable growth across oil & gas, manufacturing, and energy — through Lean Six Sigma, Generative AI, and data-driven problem solving.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 anim-up d3">
-                    <a href="#experience" class="bg-white text-navy-800 text-xs font-bold uppercase tracking-wider px-7 py-4 rounded-xl inline-flex items-center justify-center gap-2 hover:bg-slate-50 transition-colors shadow-xl shadow-black/10">
+                    <a href="#projects" class="bg-gradient-to-r from-copper-500 to-copper-400 text-white text-xs font-bold uppercase tracking-wider px-7 py-4 rounded-xl inline-flex items-center justify-center gap-2 hover:from-copper-600 hover:to-copper-500 transition-all shadow-xl shadow-copper-900/30">
                         View My Impact <iconify-icon icon="lucide:arrow-down" width="14"></iconify-icon>
                     </a>
                     <a href="#contact" class="border border-white/25 text-white text-xs font-bold uppercase tracking-wider px-7 py-4 rounded-xl inline-flex items-center justify-center gap-2 hover:bg-white/10 transition-colors backdrop-blur-sm">
@@ -129,31 +176,48 @@
         </div>
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
             <div class="w-8 h-12 border-2 border-white/30 rounded-full flex items-start justify-center p-1.5">
-                <div class="w-1.5 h-3 bg-white/60 rounded-full animate-pulse"></div>
+                <div class="w-1.5 h-3 bg-copper-400 rounded-full animate-pulse"></div>
             </div>
         </div>
     </section>
 
     <!-- STATS -->
-    <section class="bg-white border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 py-14">
+    <section class="bg-ink-950 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-14 dots-pattern">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="stat-card rounded-2xl p-6 border border-navy-100/50 text-center">
-                    <div class="text-3xl md:text-4xl font-extrabold text-navy-800 mb-1" data-count="25" data-suffix="Cr+">0</div>
-                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Savings Delivered (₹)</p>
+                <div class="rounded-2xl p-6 border border-white/10 bg-white/[0.03] text-center backdrop-blur-sm">
+                    <div class="font-display text-3xl md:text-4xl font-bold text-copper-400 mb-1" data-count="25" data-suffix="Cr+">0</div>
+                    <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Savings Delivered (₹)</p>
                 </div>
-                <div class="stat-card rounded-2xl p-6 border border-navy-100/50 text-center">
-                    <div class="text-3xl md:text-4xl font-extrabold text-navy-800 mb-1" data-count="3" data-suffix="">0</div>
-                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Global Case Wins</p>
+                <div class="rounded-2xl p-6 border border-white/10 bg-white/[0.03] text-center backdrop-blur-sm">
+                    <div class="font-display text-3xl md:text-4xl font-bold text-copper-400 mb-1" data-count="3" data-suffix="">0</div>
+                    <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Global Case Wins</p>
                 </div>
-                <div class="stat-card rounded-2xl p-6 border border-navy-100/50 text-center">
-                    <div class="text-3xl md:text-4xl font-extrabold text-navy-800 mb-1" data-count="4" data-suffix="">0</div>
-                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Research Pubs</p>
+                <div class="rounded-2xl p-6 border border-white/10 bg-white/[0.03] text-center backdrop-blur-sm">
+                    <div class="font-display text-3xl md:text-4xl font-bold text-copper-400 mb-1" data-count="4" data-suffix="">0</div>
+                    <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Research Pubs</p>
                 </div>
-                <div class="stat-card rounded-2xl p-6 border border-navy-100/50 text-center">
-                    <div class="text-3xl md:text-4xl font-extrabold text-navy-800 mb-1" data-count="15" data-suffix="%">0</div>
-                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Productivity Lift</p>
+                <div class="rounded-2xl p-6 border border-white/10 bg-white/[0.03] text-center backdrop-blur-sm">
+                    <div class="font-display text-3xl md:text-4xl font-bold text-copper-400 mb-1" data-count="15" data-suffix="%">0</div>
+                    <p class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Productivity Lift</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND & INSTITUTIONAL EXPERIENCE -->
+    <section class="bg-white border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-12">
+            <p class="eyebrow text-slate-400 text-center mb-8">Brand & Institutional Experience</p>
+            <div class="flex flex-wrap justify-center gap-3.5">
+                <span class="brand-chip"><iconify-icon icon="lucide:briefcase" width="18"></iconify-icon>EY Parthenon</span>
+                <span class="brand-chip"><iconify-icon icon="lucide:graduation-cap" width="18"></iconify-icon>IIM Kozhikode</span>
+                <span class="brand-chip"><iconify-icon icon="lucide:landmark" width="18"></iconify-icon>Reserve Bank of India</span>
+                <span class="brand-chip"><iconify-icon icon="lucide:flask-conical" width="18"></iconify-icon>NISER</span>
+                <span class="brand-chip"><iconify-icon icon="lucide:atom" width="18"></iconify-icon>BARC</span>
+                <span class="brand-chip"><iconify-icon icon="lucide:award" width="18"></iconify-icon>Yale University</span>
+                <span class="brand-chip"><iconify-icon icon="lucide:package" width="18"></iconify-icon>Amazon</span>
+                <span class="brand-chip"><iconify-icon icon="lucide:cup-soda" width="18"></iconify-icon>Coca-Cola</span>
             </div>
         </div>
     </section>
@@ -163,38 +227,38 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
                 <div class="lg:col-span-3">
-                    <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-600 mb-4">Executive Profile</p>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">Driving strategic transformation at <span class="gradient-text font-playfair font-semibold">scale</span></h2>
-                    <p class="text-slate-500 leading-relaxed mb-5">I am a Senior Consultant at EY-Parthenon with a track record of driving massive organizational impact. Equipped with an MBA from IIM Kozhikode (Top 15%) and an Integrated M.Sc. from NISER, I bring a blend of elite strategy, deep analytical rigor, and an entrepreneurial bias for action to every engagement.</p>
-                    <p class="text-slate-500 leading-relaxed mb-5">My expertise lies in operational transformation, direct cost reduction, and go-to-market strategy. I have successfully delivered over ₹25 Cr in annualized operational savings for enterprise clients through Lean Six Sigma methodologies, while also designing data-driven B2B expansion frameworks that generate significant ARR.</p>
-                    <p class="text-slate-500 leading-relaxed mb-8">Before moving into strategy consulting, I co-founded GAMERS TAG, leading finance and deploying Generative AI architectures via n8n automation. Whether leading complex factory turnarounds, consulting for fintech policy at the RBI, or competing at the Yale Graduate Case Competition, my goal is always the same: turning complex challenges into measurable growth stories.</p>
+                    <p class="eyebrow text-copper-600 mb-4">Executive Profile</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-ink-900 tracking-tight leading-tight mb-6">Driving strategic transformation at <span class="gradient-text italic">scale</span></h2>
+                    <p class="text-slate-500 leading-relaxed mb-5">I am a Senior Consultant at <span class="brand">EY-Parthenon</span> with a track record of driving massive organizational impact. Equipped with an MBA from <span class="brand">IIM Kozhikode</span> (Top 15%) and an Integrated M.Sc. from <span class="brand">NISER</span>, I bring a blend of elite strategy, deep analytical rigor, and an entrepreneurial bias for action to every engagement.</p>
+                    <p class="text-slate-500 leading-relaxed mb-5">My expertise lies in operational transformation, direct cost reduction, and go-to-market strategy. I have delivered over ₹25 Cr in annualized operational savings for enterprise clients — including asset optimization and quality management for India's largest oil & gas producer — through Lean Six Sigma methodologies and data-driven B2B expansion frameworks.</p>
+                    <p class="text-slate-500 leading-relaxed mb-8">Before moving into strategy consulting, I co-founded <span class="brand">GAMERS TAG</span>, leading finance and deploying Generative AI architectures via n8n automation. Whether leading complex factory turnarounds, consulting for fintech policy at the <span class="brand">RBI</span>, or competing at the <span class="brand">Yale</span> Graduate Case Competition, my goal is always the same: turning complex challenges into measurable growth stories.</p>
                     <div class="flex flex-wrap gap-2.5">
-                        <span class="bg-navy-50 text-navy-700 text-xs font-semibold px-4 py-2 rounded-lg">Operational Transformation</span>
-                        <span class="bg-navy-50 text-navy-700 text-xs font-semibold px-4 py-2 rounded-lg">Cost Optimization</span>
-                        <span class="bg-navy-50 text-navy-700 text-xs font-semibold px-4 py-2 rounded-lg">Generative AI (n8n/Python)</span>
-                        <span class="bg-navy-50 text-navy-700 text-xs font-semibold px-4 py-2 rounded-lg">Lean Six Sigma</span>
-                        <span class="bg-navy-50 text-navy-700 text-xs font-semibold px-4 py-2 rounded-lg">B2B Strategy</span>
-                        <span class="bg-navy-50 text-navy-700 text-xs font-semibold px-4 py-2 rounded-lg">Data Analytics</span>
+                        <span class="bg-ink-50 text-ink-700 text-xs font-bold px-4 py-2 rounded-lg border border-ink-100">Operational Transformation</span>
+                        <span class="bg-ink-50 text-ink-700 text-xs font-bold px-4 py-2 rounded-lg border border-ink-100">Asset Optimization</span>
+                        <span class="bg-ink-50 text-ink-700 text-xs font-bold px-4 py-2 rounded-lg border border-ink-100">Quality Management</span>
+                        <span class="bg-ink-50 text-ink-700 text-xs font-bold px-4 py-2 rounded-lg border border-ink-100">Generative AI (n8n/Python)</span>
+                        <span class="bg-ink-50 text-ink-700 text-xs font-bold px-4 py-2 rounded-lg border border-ink-100">Lean Six Sigma</span>
+                        <span class="bg-ink-50 text-ink-700 text-xs font-bold px-4 py-2 rounded-lg border border-ink-100">B2B Strategy</span>
                     </div>
                 </div>
                 <div class="lg:col-span-2 relative">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-slate-300/40 border border-slate-200/60">
-                        <!-- YOUR ACTUAL PHOTO -->
-                        <img src="images/ambuj-pic.png" alt="Ambuj Dhakad" class="w-full h-auto object-cover profile-img">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-ink-900/20 border border-slate-200/60">
+                        <img src="images/ambuj-photo.jpg" alt="Ambuj Dhakad — Senior Strategy Consultant" class="w-full h-auto object-cover profile-img">
+                        <div class="absolute inset-x-0 bottom-0 h-1.5 bg-gradient-to-r from-copper-500 to-copper-300"></div>
                     </div>
-                    <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl p-5 shadow-xl shadow-slate-300/40 border border-slate-100">
+                    <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl p-5 shadow-xl shadow-ink-900/10 border border-slate-100">
                         <div class="flex items-center gap-3 mb-1">
-                            <div class="w-9 h-9 bg-amber-50 rounded-xl flex items-center justify-center"><iconify-icon icon="lucide:trophy" width="16" class="text-amber-700"></iconify-icon></div>
-                            <span class="text-sm font-bold text-slate-900">Fellow of the Indian Academy of Sciences </span>
+                            <div class="w-9 h-9 bg-copper-50 rounded-xl flex items-center justify-center"><iconify-icon icon="lucide:trophy" width="16" class="text-copper-600"></iconify-icon></div>
+                            <span class="text-sm font-bold text-ink-900">Fellow, <span class="brand">Indian Academy of Sciences</span></span>
                         </div>
-                        <p class="text-[11px] text-slate-400 ml-12"> Top 1 %ile</p>
+                        <p class="text-[11px] text-slate-400 ml-12">Top 1 %ile</p>
                     </div>
-                    <div class="absolute -top-5 -right-5 bg-white rounded-2xl p-4 shadow-xl shadow-slate-300/40 border border-slate-100 hidden lg:block">
+                    <div class="absolute -top-5 -right-5 bg-white rounded-2xl p-4 shadow-xl shadow-ink-900/10 border border-slate-100 hidden lg:block">
                         <div class="flex items-center gap-2.5">
-                            <div class="w-8 h-8 bg-navy-50 rounded-xl flex items-center justify-center"><iconify-icon icon="lucide:award" width="14" class="text-navy-700"></iconify-icon></div>
+                            <div class="w-8 h-8 bg-ink-50 rounded-xl flex items-center justify-center"><iconify-icon icon="lucide:award" width="14" class="text-ink-700"></iconify-icon></div>
                             <div>
-                                <p class="text-xs font-bold text-slate-900">Sports Gold Medal</p>
-                                <p class="text-[10px] text-slate-400">Hockey & Kabaddi (IIM Kozhikode) </p>
+                                <p class="text-xs font-bold text-ink-900">Sports Gold Medal</p>
+                                <p class="text-[10px] text-slate-400">Hockey & Kabaddi (IIM Kozhikode)</p>
                             </div>
                         </div>
                     </div>
@@ -207,170 +271,168 @@
     <section id="services" class="py-24 md:py-32 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16">
-                <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-600 mb-4">Core Competencies</p>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Areas of <span class="gradient-text font-playfair font-semibold">Expertise</span></h2>
+                <p class="eyebrow text-copper-600 mb-4">Core Competencies</p>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-ink-900 tracking-tight">Areas of <span class="gradient-text italic">Expertise</span></h2>
             </div>
             <div class="grid md:grid-cols-3 gap-7">
-                <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
-                    <div class="w-14 h-14 bg-navy-50 rounded-2xl flex items-center justify-center mb-6"><iconify-icon icon="lucide:settings-2" width="24" class="text-navy-700"></iconify-icon></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Operational Transformation</h3>
-                    <p class="text-slate-500 leading-relaxed text-sm mb-6">Driving millions in savings and productivity via Lean Six Sigma methodologies, predictive maintenance, and end-to-end yield optimization.</p>
+                <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm border-t-4 border-t-ink-900">
+                    <div class="w-14 h-14 bg-ink-50 rounded-2xl flex items-center justify-center mb-6"><iconify-icon icon="lucide:settings-2" width="24" class="text-ink-700"></iconify-icon></div>
+                    <h3 class="font-display text-lg font-bold text-ink-900 mb-3">Operational Transformation</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm mb-6">Driving millions in savings and productivity via Lean Six Sigma, asset optimization, quality management, and end-to-end yield improvement.</p>
                     <ul class="space-y-2.5">
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-navy-600 flex-shrink-0"></iconify-icon>Direct Cost Reduction</li>
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-navy-600 flex-shrink-0"></iconify-icon>OEE & Yield Enhancement</li>
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-navy-600 flex-shrink-0"></iconify-icon>Energy Efficiency</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>Direct Cost Reduction</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>Asset Optimization & OEE</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>Energy Efficiency</li>
                     </ul>
                 </div>
-                <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
-                    <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center mb-6"><iconify-icon icon="lucide:bot" width="24" class="text-teal-700"></iconify-icon></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Generative AI & Automation</h3>
+                <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm border-t-4 border-t-copper-500">
+                    <div class="w-14 h-14 bg-copper-50 rounded-2xl flex items-center justify-center mb-6"><iconify-icon icon="lucide:bot" width="24" class="text-copper-600"></iconify-icon></div>
+                    <h3 class="font-display text-lg font-bold text-ink-900 mb-3">Generative AI & Automation</h3>
                     <p class="text-slate-500 leading-relaxed text-sm mb-6">Building intelligent workflows and autonomous agents using n8n, Python, and advanced prompt engineering to slash operational burn rates.</p>
                     <ul class="space-y-2.5">
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-teal-600 flex-shrink-0"></iconify-icon>n8n Workflow Automation</li>
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-teal-600 flex-shrink-0"></iconify-icon>AI Customer Agents</li>
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-teal-600 flex-shrink-0"></iconify-icon>Advanced Prompt Engineering</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>n8n Workflow Automation</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>AI Customer Agents</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>Advanced Prompt Engineering</li>
                     </ul>
                 </div>
-                <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm">
-                    <div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mb-6"><iconify-icon icon="lucide:trending-up" width="24" class="text-amber-700"></iconify-icon></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Go-to-Market & Strategy</h3>
+                <div class="card-hover bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm border-t-4 border-t-ink-400">
+                    <div class="w-14 h-14 bg-ink-50 rounded-2xl flex items-center justify-center mb-6"><iconify-icon icon="lucide:trending-up" width="24" class="text-ink-600"></iconify-icon></div>
+                    <h3 class="font-display text-lg font-bold text-ink-900 mb-3">Go-to-Market & Strategy</h3>
                     <p class="text-slate-500 leading-relaxed text-sm mb-6">Formulating data-backed expansion frameworks, B2B partner selection, and competitive intelligence to capture high-value market share.</p>
                     <ul class="space-y-2.5">
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-amber-600 flex-shrink-0"></iconify-icon>B2B Sales Strategy</li>
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-amber-600 flex-shrink-0"></iconify-icon>Partner & Dealer Onboarding</li>
-                        <li class="flex items-center gap-2.5 text-sm text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-amber-600 flex-shrink-0"></iconify-icon>Business & Data Analytics</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>B2B Sales Strategy</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>Partner & Dealer Onboarding</li>
+                        <li class="flex items-center gap-2.5 text-sm font-medium text-slate-600"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 flex-shrink-0"></iconify-icon>Business & Data Analytics</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- EXPERIENCE LINE -->
-    <section id="experience" class="py-24 md:py-32 bg-white border-t border-slate-100">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-24 md:py-32 section-bg border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid lg:grid-cols-5 gap-12 lg:gap-16">
                 <div class="lg:col-span-3">
-                    <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-600 mb-4">Career Path</p>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-10">Professional <span class="gradient-text font-playfair font-semibold">Experience</span></h2>
+                    <p class="eyebrow text-copper-600 mb-4">Career Path</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-ink-900 tracking-tight mb-10">Professional <span class="gradient-text italic">Experience</span></h2>
                     <div class="relative pl-8">
                         <div class="tl-line absolute left-[11px] top-2 bottom-0 w-0.5"></div>
-                        
+
                         <!-- EY PARTHENON -->
                         <div class="relative mb-12">
-                            <div class="absolute -left-8 top-1.5 w-3 h-3 bg-navy-700 rounded-full border-[3px] border-white shadow-sm"></div>
+                            <div class="absolute -left-8 top-1.5 w-3 h-3 bg-copper-500 rounded-full border-[3px] border-white shadow-sm"></div>
                             <div class="flex items-center gap-3 mb-1">
-                                <h4 class="text-lg font-bold text-slate-900">Senior Consultant</h4>
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-navy-700 bg-navy-50 px-2.5 py-1 rounded-md">Current</span>
+                                <h4 class="font-display text-lg font-bold text-ink-900">Senior Consultant</h4>
+                                <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-white bg-copper-500 px-2.5 py-1 rounded-md">Current</span>
                             </div>
-                            <p class="text-sm font-semibold text-slate-600 mb-0.5">EY-Parthenon · Aug 2024 – Present</p>
+                            <p class="text-sm font-bold text-slate-600 mb-0.5"><span class="brand">EY-Parthenon</span> · Aug 2024 – Present</p>
                             <p class="text-xs text-slate-400 mb-4">New Delhi, India</p>
                             <ul class="space-y-3 text-sm text-slate-600 leading-relaxed">
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-navy-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Foundry Cost Optimization:</b> Identified ~₹10 Cr in operational savings for a major pumps and pipe manufacturer by conducting should-cost supplier negotiations, revalidating billing weights, and optimizing yield.</span></li>
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-navy-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Operational Transformation:</b> Spearheaded improvements for a Tier-1 seamless pipe manufacturer; increased on-time delivery by 6%, reduced downtime by 3%, and delivered ₹15+ Cr in annualized savings.</span></li>
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-navy-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Productivity & Yield:</b> Enhanced OEE by 8% collaborating with plant heads to implement root-cause controls; reduced scrap and drove a 15% overall productivity growth.</span></li>
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-navy-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Go-to-Market Strategy:</b> Executed B2B sales strategy for a premium EV OEM via data-driven selection; onboarded dealerships generating ₹12 Cr+ in annual recurring revenue.</span></li>
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-navy-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Energy & Sustainability:</b> Reduced baseline fuel consumption from 109 L/MT to 85 L/MT (-22%) and cut overall power costs by 8% via advanced boiler scheduling.</span></li>
-                            </ul>
-                        </div>
-                        
-                        <!-- GAMERS TAG -->
-                        <div class="relative mb-12">
-                            <div class="absolute -left-8 top-1.5 w-3 h-3 bg-slate-300 rounded-full border-[3px] border-white shadow-sm"></div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-0.5">Co-Founder (Strategy & Finance)</h4>
-                            <p class="text-sm font-semibold text-slate-600 mb-0.5">Gamers Tag Pvt. Ltd · Jan 2023 – Aug 2024</p>
-                            <ul class="space-y-3 mt-4 text-sm text-slate-600 leading-relaxed">
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-slate-400 mt-0.5 flex-shrink-0"></iconify-icon><span><b>AI Integration & Finance:</b> Developed and scaled AI-powered customer service agents integrating WhatsApp/Telegram via n8n automation; managed planning to optimize burn rate.</span></li>
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-slate-400 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Strategic Growth:</b> Led strategic direction for B2B/B2C esports services; doubled brand visibility and user engagement via campus ambassador programs.</span></li>
-                            </ul>
-                        </div>
-                        
-                        <!-- RBI -->
-                        <div class="relative">
-                            <div class="absolute -left-8 top-1.5 w-3 h-3 bg-slate-300 rounded-full border-[3px] border-white shadow-sm"></div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-0.5">Research Intern (Dept. of Supervision)</h4>
-                            <p class="text-sm font-semibold text-slate-600 mb-0.5">Reserve Bank of India · Apr 2023 – Jun 2023</p>
-                            <ul class="space-y-3 mt-4 text-sm text-slate-600 leading-relaxed">
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-slate-400 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Economic Research:</b> Analyzed a 10-year macroeconomic database to assess the Indian Fintech landscape; identified critical user pain points to inform regulatory perspectives.</span></li>
-                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-slate-400 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Strategic Recommendations:</b> Proposed psychometric and ML-based banking transformations enabling collateral-free loans to 5+ Cr MSMEs.</span></li>
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-copper-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Oil & Gas — Asset Optimization & Quality:</b> Engaged with <span class="brand">India's largest oil & gas producer</span> on asset optimization and quality management — improving asset reliability and utilization and embedding structured quality governance across key installations.</span></li>
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-copper-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Foundry Cost Optimization:</b> Identified ~₹10 Cr in operational savings for a major pumps and pipe manufacturer via should-cost supplier negotiations, billing weight revalidation, and yield optimization.</span></li>
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-copper-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Operational Transformation:</b> Spearheaded improvements for a Tier-1 seamless pipe manufacturer; on-time delivery +6%, downtime −3%, ₹15+ Cr in annualized savings.</span></li>
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-copper-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Productivity & Yield:</b> Enhanced OEE by 8% with plant heads via root-cause controls; reduced scrap and drove 15% overall productivity growth.</span></li>
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-copper-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Go-to-Market Strategy:</b> B2B sales strategy for a premium EV OEM via data-driven selection; onboarded dealerships generating ₹12 Cr+ ARR.</span></li>
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-copper-500 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Energy & Sustainability:</b> Cut baseline fuel consumption from 109 L/MT to 85 L/MT (−22%) and power costs by 8% via advanced boiler scheduling.</span></li>
                             </ul>
                         </div>
 
+                        <!-- GAMERS TAG -->
+                        <div class="relative mb-12">
+                            <div class="absolute -left-8 top-1.5 w-3 h-3 bg-slate-300 rounded-full border-[3px] border-white shadow-sm"></div>
+                            <h4 class="font-display text-lg font-bold text-ink-900 mb-0.5">Co-Founder (Strategy & Finance)</h4>
+                            <p class="text-sm font-bold text-slate-600 mb-0.5"><span class="brand">Gamers Tag Pvt. Ltd</span> · Jan 2023 – Aug 2024</p>
+                            <ul class="space-y-3 mt-4 text-sm text-slate-600 leading-relaxed">
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-slate-400 mt-0.5 flex-shrink-0"></iconify-icon><span><b>AI Integration & Finance:</b> Scaled AI-powered customer service agents on WhatsApp/Telegram via n8n automation; managed planning to optimize burn rate.</span></li>
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-slate-400 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Strategic Growth:</b> Led B2B/B2C esports strategy; doubled brand visibility via campus ambassador programs.</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- RBI -->
+                        <div class="relative">
+                            <div class="absolute -left-8 top-1.5 w-3 h-3 bg-slate-300 rounded-full border-[3px] border-white shadow-sm"></div>
+                            <h4 class="font-display text-lg font-bold text-ink-900 mb-0.5">Research Intern (Dept. of Supervision)</h4>
+                            <p class="text-sm font-bold text-slate-600 mb-0.5"><span class="brand">Reserve Bank of India</span> · Apr 2023 – Jun 2023</p>
+                            <ul class="space-y-3 mt-4 text-sm text-slate-600 leading-relaxed">
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-slate-400 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Economic Research:</b> Analyzed a 10-year macroeconomic database on the Indian Fintech landscape to inform regulatory perspectives.</span></li>
+                                <li class="flex items-start gap-2.5"><iconify-icon icon="lucide:chevron-right" width="16" class="text-slate-400 mt-0.5 flex-shrink-0"></iconify-icon><span><b>Strategic Recommendations:</b> Proposed psychometric and ML-based banking transformations enabling collateral-free loans to 5+ Cr MSMEs.</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
+
                 <!-- EDUCATION & AWARDS -->
                 <div class="lg:col-span-2">
-                    <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-600 mb-4">Education</p>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-10">Academic <span class="gradient-text font-playfair font-semibold">Pedigree</span></h2>
+                    <p class="eyebrow text-copper-600 mb-4">Education</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-ink-900 tracking-tight mb-10">Academic <span class="gradient-text italic">Pedigree</span></h2>
                     <div class="space-y-5">
-                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm">
                             <div class="flex items-start gap-4">
-                                <div class="w-11 h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:graduation-cap" width="18" class="text-navy-700"></iconify-icon></div>
+                                <div class="w-11 h-11 bg-ink-900 rounded-xl flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:graduation-cap" width="18" class="text-copper-400"></iconify-icon></div>
                                 <div>
-                                    <h4 class="text-sm font-bold text-slate-900 mb-0.5">MBA — IIM Kozhikode</h4>
-                                    <p class="text-[11px] text-slate-500 font-semibold mb-1.5">Top 15% of Batch · 2022 – 2024</p>
-                                    <p class="text-xs text-slate-600 leading-relaxed">Elected Member of Calicut Marathon Committee (negotiated with 30+ sponsors to secure ₹1.6 Cr funding).</p>
+                                    <h4 class="text-sm font-bold text-ink-900 mb-0.5">MBA — <span class="brand">IIM Kozhikode</span></h4>
+                                    <p class="text-[11px] text-slate-500 font-bold mb-1.5">Top 15% of Batch · 2022 – 2024</p>
+                                    <p class="text-xs text-slate-600 leading-relaxed">Elected Member of Calicut Marathon Committee (negotiated with 8+ sponsors to secure ₹0.6 Cr funding).</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm">
                             <div class="flex items-start gap-4">
-                                <div class="w-11 h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:graduation-cap" width="18" class="text-navy-700"></iconify-icon></div>
+                                <div class="w-11 h-11 bg-ink-900 rounded-xl flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:graduation-cap" width="18" class="text-copper-400"></iconify-icon></div>
                                 <div>
-                                    <h4 class="text-sm font-bold text-slate-900 mb-0.5">Integrated M.Sc. — NISER</h4>
-                                    <p class="text-[11px] text-slate-500 font-semibold mb-1.5">Top 3 of Batch · 2016 – 2021</p>
-                                    <p class="text-xs text-slate-600 leading-relaxed">Founder & President of Placement Cell; coordinated with 12+ recruiters for for placements. Awarded Merit Scholarship (Top 0.1%ile).</p>
+                                    <h4 class="text-sm font-bold text-ink-900 mb-0.5">Integrated M.Sc. — <span class="brand">NISER</span></h4>
+                                    <p class="text-[11px] text-slate-500 font-bold mb-1.5">Top 3 of Batch · 2016 – 2021</p>
+                                    <p class="text-xs text-slate-600 leading-relaxed">Founder & President of Placement Cell; coordinated with 12+ recruiters. Awarded Merit Scholarship (Top 0.1%ile).</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="mt-8 pt-8 border-t border-slate-100">
-                            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-600 mb-6">Key Achievements</p>
+
+                        <div class="mt-8 pt-8 border-t border-slate-200">
+                            <p class="eyebrow text-copper-600 mb-6">Key Achievements</p>
                             <div class="space-y-4">
                                 <div class="flex items-center gap-3 bg-white border border-slate-200 rounded-xl p-3 shadow-sm">
-                                    <div class="w-8 h-8 bg-amber-50 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:trophy" width="16" class="text-amber-600"></iconify-icon></div>
-                                    <div><p class="text-xs font-bold text-slate-900">Yale Grad Consulting Competition</p><p class="text-[10px] text-slate-500">International Winner (1st out of 170 teams)</p></div>
+                                    <div class="w-8 h-8 bg-copper-50 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:trophy" width="16" class="text-copper-600"></iconify-icon></div>
+                                    <div><p class="text-xs font-bold text-ink-900"><span class="brand">Yale</span> Grad Consulting Competition</p><p class="text-[10px] text-slate-500 font-semibold">International Winner (1st out of 170 teams)</p></div>
                                 </div>
                                 <div class="flex items-center gap-3 bg-white border border-slate-200 rounded-xl p-3 shadow-sm">
-                                    <div class="w-8 h-8 bg-amber-50 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:award" width="16" class="text-amber-600"></iconify-icon></div>
-                                    <div><p class="text-xs font-bold text-slate-900">Amazon National Challenge</p><p class="text-[10px] text-slate-500">Campus Winner (out of 22,400+ teams)</p></div>
+                                    <div class="w-8 h-8 bg-copper-50 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:award" width="16" class="text-copper-600"></iconify-icon></div>
+                                    <div><p class="text-xs font-bold text-ink-900"><span class="brand">Amazon</span> National Challenge</p><p class="text-[10px] text-slate-500 font-semibold">Campus Winner (out of 22,400+ teams)</p></div>
                                 </div>
                                 <div class="flex items-center gap-3 bg-white border border-slate-200 rounded-xl p-3 shadow-sm">
-                                    <div class="w-8 h-8 bg-amber-50 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:award" width="16" class="text-amber-600"></iconify-icon></div>
-                                    <div><p class="text-xs font-bold text-slate-900">Coca-Cola Disrupt</p><p class="text-[10px] text-slate-500">National Finalist (Top 4 of 92+ candidates)</p></div>
+                                    <div class="w-8 h-8 bg-copper-50 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:award" width="16" class="text-copper-600"></iconify-icon></div>
+                                    <div><p class="text-xs font-bold text-ink-900"><span class="brand">Coca-Cola</span> Disrupt</p><p class="text-[10px] text-slate-500 font-semibold">National Finalist (Top 4 of 92+ candidates)</p></div>
                                 </div>
                                 <div class="flex items-center gap-3 bg-white border border-slate-200 rounded-xl p-3 shadow-sm">
-                                    <div class="w-8 h-8 bg-amber-50 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:medal" width="16" class="text-amber-600"></iconify-icon></div>
-                                    <div><p class="text-xs font-bold text-slate-900">Homi Bhabha Medal & IAS Fellow</p><p class="text-[10px] text-slate-500">Awarded for all-round excellence (1 out of 200+)</p></div>
+                                    <div class="w-8 h-8 bg-copper-50 rounded-lg flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:medal" width="16" class="text-copper-600"></iconify-icon></div>
+                                    <div><p class="text-xs font-bold text-ink-900">Homi Bhabha Medal & <span class="brand">IAS Fellow</span></p><p class="text-[10px] text-slate-500 font-semibold">Awarded for all-round excellence (1 out of 200+)</p></div>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- IMPACT PORTFOLIO (Replacing old 'Projects') -->
-    <section id="projects" class="py-24 md:py-32 section-bg">
+    <!-- FEATURED ENGAGEMENTS -->
+    <section id="projects" class="py-24 md:py-32 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-12">
-                <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-600 mb-4">Strategic Impact</p>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Featured <span class="gradient-text font-playfair font-semibold">Engagements</span></h2>
-                <p class="text-slate-500 max-w-xl mx-auto">Selected high-impact transformations spanning direct cost reduction, operational productivity, Gen AI automation, and public policy.</p>
+                <p class="eyebrow text-copper-600 mb-4">Strategic Impact</p>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-ink-900 tracking-tight mb-4">Featured <span class="gradient-text italic">Engagements</span></h2>
+                <p class="text-slate-500 max-w-xl mx-auto">Selected high-impact transformations across oil & gas, manufacturing, Gen AI automation, and public policy.</p>
             </div>
-            
+
             <div class="flex flex-wrap justify-center gap-2.5 mb-12">
-                <button class="fbtn active border border-slate-200 text-slate-600 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200" data-filter="all">All</button>
-                <button class="fbtn border border-slate-200 text-slate-600 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200 hover:border-slate-300" data-filter="consulting">Consulting</button>
-                <button class="fbtn border border-slate-200 text-slate-600 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200 hover:border-slate-300" data-filter="ai">AI & Startup</button>
-                <button class="fbtn border border-slate-200 text-slate-600 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200 hover:border-slate-300" data-filter="policy">Policy</button>
+                <button class="fbtn active border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200" data-filter="all">All</button>
+                <button class="fbtn border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200 hover:border-slate-300" data-filter="consulting">Consulting</button>
+                <button class="fbtn border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200 hover:border-slate-300" data-filter="energy">Energy & Industrials</button>
+                <button class="fbtn border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200 hover:border-slate-300" data-filter="ai">AI & Startup</button>
+                <button class="fbtn border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xl transition-all duration-200 hover:border-slate-300" data-filter="policy">Policy</button>
             </div>
-            
-            <div id="projectGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-                <!-- JS dynamically injects projects here -->
-            </div>
+
+            <div id="projectGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
         </div>
     </section>
 
@@ -379,8 +441,8 @@
         <div class="modal-bg absolute inset-0" onclick="closeModal()"></div>
         <div class="relative z-10 h-full overflow-y-auto">
             <div class="min-h-full flex items-start justify-center py-8 px-4">
-                <div class="bg-white rounded-2xl max-w-3xl w-full shadow-2xl shadow-slate-400/20 relative my-auto">
-                    <button onclick="closeModal()" class="absolute top-5 right-5 z-10 w-10 h-10 bg-slate-100 hover:bg-slate-200 rounded-xl flex items-center justify-center transition-colors"><iconify-icon icon="lucide:x" width="18" class="text-slate-600"></iconify-icon></button>
+                <div class="bg-white rounded-2xl max-w-3xl w-full shadow-2xl shadow-ink-950/30 relative my-auto">
+                    <button onclick="closeModal()" class="absolute top-5 right-5 z-10 w-10 h-10 bg-white/90 hover:bg-white rounded-xl flex items-center justify-center transition-colors shadow-md"><iconify-icon icon="lucide:x" width="18" class="text-ink-900"></iconify-icon></button>
                     <div id="mContent" class="overflow-hidden rounded-2xl"></div>
                 </div>
             </div>
@@ -391,61 +453,76 @@
     <section id="publications" class="py-24 md:py-32 section-bg border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16">
-                <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-600 mb-4">Academic Work</p>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Research & <span class="gradient-text font-playfair font-semibold">Publications</span></h2>
+                <p class="eyebrow text-copper-600 mb-4">Academic Work</p>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-ink-900 tracking-tight">Research & <span class="gradient-text italic">Publications</span></h2>
                 <p class="text-slate-500 max-w-xl mx-auto mt-4">Peer-reviewed research spanning spectroscopy, computational chemistry, and nanomaterials.</p>
             </div>
             <div class="max-w-3xl mx-auto space-y-4">
-                <a href="https://pubs.acs.org/doi/10.1021/acsomega.1c02798" target="_blank" rel="noopener noreferrer" class="block card-hover bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm group cursor-pointer transition-all">
+                <a href="https://pubs.acs.org/doi/10.1021/acsomega.1c02798" target="_blank" rel="noopener noreferrer" class="block card-hover bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm group cursor-pointer">
                     <div class="flex items-start justify-between gap-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-navy-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-navy-100 transition-colors"><iconify-icon icon="lucide:file-text" width="18" class="text-navy-600"></iconify-icon></div>
+                            <div class="w-10 h-10 bg-ink-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-copper-50 transition-colors"><iconify-icon icon="lucide:file-text" width="18" class="text-ink-700 group-hover:text-copper-600 transition-colors"></iconify-icon></div>
                             <div>
-                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-navy-700 transition-colors leading-snug mb-1">Gram-Scale Synthesis of 1,8-Naphthyridines in Water: The Friedlander Reaction Revisited</h4>
-                                <p class="text-[11px] text-navy-600 font-semibold mb-1.5">Peer-Reviewed Journal Paper</p>
+                                <h4 class="text-sm font-bold text-ink-900 group-hover:text-copper-700 transition-colors leading-snug mb-1">Gram-Scale Synthesis of 1,8-Naphthyridines in Water: The Friedlander Reaction Revisited</h4>
+                                <p class="text-[11px] text-copper-600 font-bold mb-1.5"><span class="brand">ACS Omega</span> · Peer-Reviewed Journal Paper</p>
                                 <p class="text-xs text-slate-500 leading-relaxed">Green chemistry approach for gram-scale synthesis in aqueous medium with improved yield and sustainability.</p>
                             </div>
                         </div>
-                        <iconify-icon icon="lucide:external-link" width="16" class="text-slate-400 group-hover:text-navy-600 transition-colors flex-shrink-0 mt-1"></iconify-icon>
+                        <iconify-icon icon="lucide:external-link" width="16" class="text-slate-400 group-hover:text-copper-600 transition-colors flex-shrink-0 mt-1"></iconify-icon>
                     </div>
                 </a>
-                <a href="https://doi.org/10.1039/d1cp01769a" target="_blank" rel="noopener noreferrer" class="block card-hover bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm group cursor-pointer transition-all">
+                <a href="https://doi.org/10.1039/d1cp01769a" target="_blank" rel="noopener noreferrer" class="block card-hover bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm group cursor-pointer">
                     <div class="flex items-start justify-between gap-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-navy-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-navy-100 transition-colors"><iconify-icon icon="lucide:file-text" width="18" class="text-navy-600"></iconify-icon></div>
+                            <div class="w-10 h-10 bg-ink-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-copper-50 transition-colors"><iconify-icon icon="lucide:file-text" width="18" class="text-ink-700 group-hover:text-copper-600 transition-colors"></iconify-icon></div>
                             <div>
-                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-navy-700 transition-colors leading-snug mb-1">Quantification of the Electric Field Inside Protein Active Sites and Fullerenes</h4>
-                                <p class="text-[11px] text-navy-600 font-semibold mb-1.5">Peer-Reviewed Journal Paper</p>
+                                <h4 class="text-sm font-bold text-ink-900 group-hover:text-copper-700 transition-colors leading-snug mb-1">Quantification of the Electric Field Inside Protein Active Sites and Fullerenes</h4>
+                                <p class="text-[11px] text-copper-600 font-bold mb-1.5"><span class="brand">Physical Chemistry Chemical Physics (RSC)</span> · Peer-Reviewed Journal Paper</p>
                                 <p class="text-xs text-slate-500 leading-relaxed">Computational methods to quantify internal electric fields in biological systems and carbon nanostructures.</p>
                             </div>
                         </div>
-                        <iconify-icon icon="lucide:external-link" width="16" class="text-slate-400 group-hover:text-navy-600 transition-colors flex-shrink-0 mt-1"></iconify-icon>
+                        <iconify-icon icon="lucide:external-link" width="16" class="text-slate-400 group-hover:text-copper-600 transition-colors flex-shrink-0 mt-1"></iconify-icon>
                     </div>
                 </a>
-                <a href="https://link.springer.com/chapter/10.1007/978-981-33-6084-6_2" target="_blank" rel="noopener noreferrer" class="block card-hover bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm group cursor-pointer transition-all">
+                <a href="https://link.springer.com/chapter/10.1007/978-981-33-6084-6_2" target="_blank" rel="noopener noreferrer" class="block card-hover bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm group cursor-pointer">
                     <div class="flex items-start justify-between gap-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-teal-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-teal-100 transition-colors"><iconify-icon icon="lucide:book-open" width="18" class="text-teal-600"></iconify-icon></div>
+                            <div class="w-10 h-10 bg-ink-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-copper-50 transition-colors"><iconify-icon icon="lucide:book-open" width="18" class="text-ink-700 group-hover:text-copper-600 transition-colors"></iconify-icon></div>
                             <div>
-                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-navy-700 transition-colors leading-snug mb-1">Two Dimensional Infrared Spectroscopy: A Structure Sensitive Technique with Ultrafast Time Resolution</h4>
-                                <p class="text-[11px] text-teal-600 font-semibold mb-1.5">Book Chapter — Springer</p>
+                                <h4 class="text-sm font-bold text-ink-900 group-hover:text-copper-700 transition-colors leading-snug mb-1">Two Dimensional Infrared Spectroscopy: A Structure Sensitive Technique with Ultrafast Time Resolution</h4>
+                                <p class="text-[11px] text-copper-600 font-bold mb-1.5"><span class="brand">Springer Nature</span> · Book Chapter</p>
                                 <p class="text-xs text-slate-500 leading-relaxed">2D-IR spectroscopy as a structural probe with femtosecond time resolution for molecular systems.</p>
                             </div>
                         </div>
-                        <iconify-icon icon="lucide:external-link" width="16" class="text-slate-400 group-hover:text-navy-600 transition-colors flex-shrink-0 mt-1"></iconify-icon>
+                        <iconify-icon icon="lucide:external-link" width="16" class="text-slate-400 group-hover:text-copper-600 transition-colors flex-shrink-0 mt-1"></iconify-icon>
                     </div>
                 </a>
             </div>
-            
+
             <div class="max-w-3xl mx-auto mt-12 pt-10 border-t border-slate-200">
-                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-5 text-center">Research Affiliations</p>
-                <div class="grid grid-cols-4 gap-3">
-                    <div class="bg-white rounded-xl p-4 text-center border border-slate-200/80 shadow-sm"><p class="text-xs font-bold text-slate-800">NISER</p><p class="text-[10px] text-slate-400 mt-0.5">Bhubaneswar</p></div>
-                    <div class="bg-white rounded-xl p-4 text-center border border-slate-200/80 shadow-sm"><p class="text-xs font-bold text-slate-800">BARC</p><p class="text-[10px] text-slate-400 mt-0.5">Mumbai</p></div>
-                    <div class="bg-white rounded-xl p-4 text-center border border-slate-200/80 shadow-sm"><p class="text-xs font-bold text-slate-800">NCL</p><p class="text-[10px] text-slate-400 mt-0.5">Pune</p></div>
-                    <div class="bg-white rounded-xl p-4 text-center border border-slate-200/80 shadow-sm"><p class="text-xs font-bold text-slate-800">INST</p><p class="text-[10px] text-slate-400 mt-0.5">Mohali</p></div>
+                <p class="eyebrow text-slate-400 mb-6 text-center">Research Affiliations</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                    <div class="brand-chip justify-center"><iconify-icon icon="lucide:flask-conical" width="16"></iconify-icon>NISER</div>
+                    <div class="brand-chip justify-center"><iconify-icon icon="lucide:atom" width="16"></iconify-icon>BARC</div>
+                    <div class="brand-chip justify-center"><iconify-icon icon="lucide:beaker" width="16"></iconify-icon>NCL Pune</div>
+                    <div class="brand-chip justify-center"><iconify-icon icon="lucide:microscope" width="16"></iconify-icon>INST Mohali</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="relative py-24 overflow-hidden bg-ink-950">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/strategy-team/1920/900.jpg';">
+        <div class="absolute inset-0" style="background:linear-gradient(100deg, rgba(5,15,27,.94) 20%, rgba(10,25,41,.75) 60%, rgba(220,110,15,.35) 100%);"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+            <p class="eyebrow text-copper-400 mb-4">From Boardroom to Shop Floor</p>
+            <h2 class="font-display text-3xl md:text-5xl font-semibold text-white tracking-tight leading-tight mb-6">Strategy that ships.<br>Results that <span class="italic" style="color:#efa457">compound.</span></h2>
+            <p class="text-white/70 max-w-xl mx-auto mb-10">₹25 Cr+ in delivered savings across oil & gas, manufacturing, and mobility. Let's talk about your next transformation.</p>
+            <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-copper-500 to-copper-400 text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-xl hover:from-copper-600 hover:to-copper-500 transition-all shadow-xl shadow-copper-900/40">
+                Start a Conversation <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon>
+            </a>
         </div>
     </section>
 
@@ -454,45 +531,46 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid lg:grid-cols-5 gap-12 lg:gap-16">
                 <div class="lg:col-span-2">
-                    <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-navy-600 mb-4">Let's Connect</p>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">Ready to tackle your next <span class="gradient-text font-playfair font-semibold">challenge?</span></h2>
-                    <p class="text-slate-500 leading-relaxed mb-10">Whether you need large-scale operational transformation, AI automation strategy, or a fresh perspective on direct cost reduction — I'd love to discuss how I can help.</p>
+                    <p class="eyebrow text-copper-600 mb-4">Let's Connect</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-ink-900 tracking-tight leading-tight mb-6">Ready to tackle your next <span class="gradient-text italic">challenge?</span></h2>
+                    <p class="text-slate-500 leading-relaxed mb-10">Whether you need large-scale operational transformation, asset optimization, AI automation strategy, or a fresh perspective on direct cost reduction — I'd love to discuss how I can help.</p>
                     <div class="space-y-5">
                         <a href="mailto:ambujdhakad65@gmail.com" class="flex items-center gap-4 group">
-                            <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-navy-100 transition-colors"><iconify-icon icon="lucide:mail" width="18" class="text-navy-700"></iconify-icon></div>
-                            <div><p class="text-[11px] text-slate-400 mb-0.5">Email</p><p class="text-sm font-medium text-slate-900 group-hover:text-navy-700 transition-colors">ambujdhakad65@gmail.com</p></div>
+                            <div class="w-12 h-12 bg-ink-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-copper-50 transition-colors"><iconify-icon icon="lucide:mail" width="18" class="text-ink-700 group-hover:text-copper-600 transition-colors"></iconify-icon></div>
+                            <div><p class="text-[11px] text-slate-400 mb-0.5 font-bold">Email</p><p class="text-sm font-bold text-ink-900 group-hover:text-copper-700 transition-colors">ambujdhakad65@gmail.com</p></div>
                         </a>
                         <a href="https://www.linkedin.com/in/ambujdhakad" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 group">
                             <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors"><iconify-icon icon="lucide:linkedin" width="18" class="text-blue-700"></iconify-icon></div>
-                            <div><p class="text-[11px] text-slate-400 mb-0.5">LinkedIn</p><p class="text-sm font-medium text-slate-900 group-hover:text-blue-700 transition-colors">linkedin.com/in/ambujdhakad</p></div>
+                            <div><p class="text-[11px] text-slate-400 mb-0.5 font-bold">LinkedIn</p><p class="text-sm font-bold text-ink-900 group-hover:text-blue-700 transition-colors">linkedin.com/in/ambujdhakad</p></div>
                         </a>
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center flex-shrink-0"><iconify-icon icon="lucide:map-pin" width="18" class="text-slate-600"></iconify-icon></div>
-                            <div><p class="text-[11px] text-slate-400 mb-0.5">Based In</p><p class="text-sm font-medium text-slate-900">New Delhi, India</p></div>
+                            <div><p class="text-[11px] text-slate-400 mb-0.5 font-bold">Based In</p><p class="text-sm font-bold text-ink-900">New Delhi, India</p></div>
                         </div>
                     </div>
                 </div>
                 <div class="lg:col-span-3">
                     <form id="cForm" class="bg-slate-50 rounded-2xl p-8 border border-slate-200/80 shadow-sm space-y-5" action="#" method="POST">
                         <div class="grid grid-cols-2 gap-4">
-                            <div><label class="text-xs font-semibold text-slate-600 mb-1.5 block">First Name</label><input type="text" name="first_name" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy-400 transition-colors" placeholder="John"></div>
-                            <div><label class="text-xs font-semibold text-slate-600 mb-1.5 block">Last Name</label><input type="text" name="last_name" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy-400 transition-colors" placeholder="Smith"></div>
+                            <div><label class="text-xs font-bold text-slate-600 mb-1.5 block">First Name</label><input type="text" name="first_name" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-ink-900 placeholder-slate-400 focus:outline-none focus:border-copper-400 transition-colors" placeholder="John"></div>
+                            <div><label class="text-xs font-bold text-slate-600 mb-1.5 block">Last Name</label><input type="text" name="last_name" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-ink-900 placeholder-slate-400 focus:outline-none focus:border-copper-400 transition-colors" placeholder="Smith"></div>
                         </div>
-                        <div><label class="text-xs font-semibold text-slate-600 mb-1.5 block">Email</label><input type="email" name="email" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy-400 transition-colors" placeholder="john@company.com"></div>
-                        <div><label class="text-xs font-semibold text-slate-600 mb-1.5 block">Company</label><input type="text" name="company" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy-400 transition-colors" placeholder="Your organization"></div>
-                        <div><label class="text-xs font-semibold text-slate-600 mb-1.5 block">Area of Interest</label>
-                            <select name="interest" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-navy-400 transition-colors appearance-none cursor-pointer">
+                        <div><label class="text-xs font-bold text-slate-600 mb-1.5 block">Email</label><input type="email" name="email" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-ink-900 placeholder-slate-400 focus:outline-none focus:border-copper-400 transition-colors" placeholder="john@company.com"></div>
+                        <div><label class="text-xs font-bold text-slate-600 mb-1.5 block">Company</label><input type="text" name="company" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-ink-900 placeholder-slate-400 focus:outline-none focus:border-copper-400 transition-colors" placeholder="Your organization"></div>
+                        <div><label class="text-xs font-bold text-slate-600 mb-1.5 block">Area of Interest</label>
+                            <select name="interest" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-ink-900 focus:outline-none focus:border-copper-400 transition-colors appearance-none cursor-pointer">
                                 <option value="">Select an area...</option>
                                 <option>Operational Transformation</option>
+                                <option>Asset Optimization & Quality Management</option>
                                 <option>Cost Reduction & Yield Optimization</option>
                                 <option>Generative AI & Automation (n8n)</option>
                                 <option>Go-to-Market Strategy</option>
                                 <option>Other</option>
                             </select>
                         </div>
-                        <div><label class="text-xs font-semibold text-slate-600 mb-1.5 block">Message</label><textarea name="message" required rows="4" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy-400 transition-colors resize-none" placeholder="Tell me about your business challenge..."></textarea></div>
-                        <button type="submit" class="w-full bg-navy-800 hover:bg-navy-900 text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-xl transition-all duration-200 shadow-md shadow-navy-800/20 hover:shadow-lg hover:shadow-navy-800/30 flex items-center justify-center gap-2">Send Message <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon></button>
-                        <div id="fOk" class="hidden text-center py-3 bg-emerald-50 border border-emerald-200 rounded-xl"><p class="text-sm text-emerald-700 font-medium">Message sent! I'll get back to you within 24 hours.</p></div>
+                        <div><label class="text-xs font-bold text-slate-600 mb-1.5 block">Message</label><textarea name="message" required rows="4" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-ink-900 placeholder-slate-400 focus:outline-none focus:border-copper-400 transition-colors resize-none" placeholder="Tell me about your business challenge..."></textarea></div>
+                        <button type="submit" class="w-full bg-ink-900 hover:bg-ink-800 text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-xl transition-all duration-200 shadow-md shadow-ink-900/20 hover:shadow-lg hover:shadow-ink-900/30 flex items-center justify-center gap-2">Send Message <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon></button>
+                        <div id="fOk" class="hidden text-center py-3 bg-emerald-50 border border-emerald-200 rounded-xl"><p class="text-sm text-emerald-700 font-bold">Message sent! I'll get back to you within 24 hours.</p></div>
                     </form>
                 </div>
             </div>
@@ -500,125 +578,380 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-900 py-14">
+    <footer class="bg-ink-950 py-14">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-3">
-                    <div class="w-9 h-9 bg-navy-600 rounded-xl flex items-center justify-center font-bold text-white text-sm">AD</div>
+                    <div class="w-9 h-9 bg-ink-800 rounded-xl flex items-center justify-center font-bold text-white text-sm border border-copper-500/40">AD</div>
                     <span class="text-sm text-slate-400">&copy; 2026 Ambuj Dhakad. All rights reserved.</span>
                 </div>
-                <div class="flex items-center gap-6">
-                    <a href="#about" class="text-xs text-slate-500 hover:text-white transition-colors">About</a>
-                    <a href="#experience" class="text-xs text-slate-500 hover:text-white transition-colors">Experience</a>
-                    <a href="#projects" class="text-xs text-slate-500 hover:text-white transition-colors">Impact</a>
-                    <a href="#publications" class="text-xs text-slate-500 hover:text-white transition-colors">Research</a>
+                <div class="flex items-center gap-5">
+                    <a href="https://www.linkedin.com/in/ambujdhakad" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-copper-400 transition-colors"><iconify-icon icon="lucide:linkedin" width="20"></iconify-icon></a>
+                    <a href="mailto:ambujdhakad65@gmail.com" class="text-slate-400 hover:text-copper-400 transition-colors"><iconify-icon icon="lucide:mail" width="20"></iconify-icon></a>
+                    <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 hidden sm:inline">Strategy · Operations · Impact</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-    const P=[
-        {t:"Seamless Pipe Transformation",c:"EY Parthenon",ind:"Industrial Manufacturing",y:"2024",cat:"consulting",img:"https://picsum.photos/seed/procurement-cost/900/500.jpg",dur:"Ongoing",team:"Cross-functional team",
-        ch:"A Tier-1 seamless pipe manufacturer struggled with inefficient procurement, high downtime, and missed production schedules, directly impacting bottom-line profitability.",
-        ap:"Spearheaded a massive operational overhaul applying Lean Six Sigma. Restructured procurement strategies, implemented predictive maintenance, and optimized production scheduling.",
-        r:[{m:"Annual Savings",v:"₹15+ Cr",d:"Operational efficiencies"},{m:"Delivery (OTD)",v:"+6%",d:"On-time delivery rate"},{m:"Downtime",v:"-3%",d:"Reduced equipment stops"},{m:"Productivity",v:"+15%",d:"Throughput growth"}],
-        q:"Turning factory-floor inefficiencies into millions in measurable financial impact.",qa:"EY Parthenon Transformation"},
-        
-        {t:"Foundry Cost Optimization",c:"EY Parthenon",ind:"Pumps & Pipes",y:"2024",cat:"consulting",img:"https://picsum.photos/seed/market-entry-india/900/500.jpg",dur:"Ongoing",team:"Strategy team",
-        ch:"A major pumps and pipe manufacturer faced eroding margins due to suboptimal charge mixes, supplier cost bloat, and poor material yield.",
-        ap:"Conducted aggressive should-cost supplier negotiations. Revalidated billing weights and restructured the material charge mix to significantly enhance overall casting yield.",
-        r:[{m:"Op. Savings",v:"₹10 Cr",d:"Identified cost removal"},{m:"Yield",v:"Optimized",d:"Maximized material output"},{m:"Suppliers",v:"Renegotiated",d:"Should-cost alignment"},{m:"OEE Lift",v:"+8%",d:"Enhanced machine uptime"}],
-        q:"Direct cost reduction requires digging deep into the operational truth of the supply chain.",qa:"EY Parthenon Optimization"},
-        
-        {t:"Energy Efficiency Implementation",c:"EY Parthenon",ind:"Manufacturing",y:"2024",cat:"consulting",img:"https://picsum.photos/seed/kerala-government/900/500.jpg",dur:"Ongoing",team:"Strategy team",
-        ch:"Heavy energy usage and suboptimal boiler deployment were drastically bloating power and fuel costs across the client's manufacturing mills.",
-        ap:"Led targeted sustainability initiatives relying on real-time monitoring. Optimized and advanced boiler scheduling to strictly minimize unneeded energy expenditure.",
-        r:[{m:"Fuel Use",v:"-22%",d:"From 109 to 85 L/MT"},{m:"Power Cost",v:"-8%",d:"Reduction across mills"},{m:"Monitoring",v:"Real-Time",d:"Data-driven scheduling"},{m:"Sustainability",v:"Achieved",d:"Lowered carbon footprint"}],
-        q:"Efficiency isn't just about speed; it's about making every unit of energy count.",qa:"Sustainability Initiative"},
-
-        {t:"Go-to-Market Strategy",c:"EY Parthenon",ind:"EV Automotive",y:"2024",cat:"consulting",img:"https://picsum.photos/seed/gaming-esports-app/900/500.jpg",dur:"Ongoing",team:"Strategy team",
-        ch:"A premium two-wheeler EV OEM needed a highly structured approach to scale B2B sales and drastically elevate post-sales service metrics.",
-        ap:"Developed a data-driven partner selection framework to onboard high-value dealerships. Concurrently transformed after-sales operations utilizing standard 5S methodology.",
-        r:[{m:"ARR Gen.",v:"₹12 Cr+",d:"Annual recurring revenue"},{m:"Service Prod.",v:"+14%",d:"Boosted service speed"},{m:"Incidents",v:"-13%",d:"Lowered recordable errors"},{m:"Framework",v:"Data-Driven",d:"Dealership selection"}],
-        q:"Growth is only scalable when backed by rigorous, data-driven frameworks.",qa:"B2B Expansion Strategy"},
-
-        {t:"AI Agents & n8n Automation",c:"GAMERS TAG",ind:"Esports & Gaming",y:"2023 – 2024",cat:"ai",img:"https://picsum.photos/seed/spectroscopy-research-lab/900/500.jpg",dur:"1.5 years",team:"Co-founding team",
-        ch:"As a scaling startup, GAMERS TAG required rapid customer engagement and operational execution without the massive burn rate of a bloated human support team.",
-        ap:"As Co-Founder, I engineered and scaled intelligent AI customer service agents. Integrated them seamlessly into WhatsApp and Telegram using n8n workflow automation to drastically cut costs.",
-        r:[{m:"Automation",v:"Deployed",d:"n8n & Prompt Engineering"},{m:"Burn Rate",v:"Optimized",d:"Lean operations achieved"},{m:"Growth",v:"4X",d:"Social media & platform"},{m:"Strategic AI",v:"Scaled",d:"B2B & B2C interactions"}],
-        q:"Generative AI is the ultimate lever for capital-efficient startup growth.",qa:"Gamers Tag Co-Founder"},
-
-        {t:"Fintech Supervision Framework",c:"Reserve Bank of India",ind:"Financial Regulation",y:"2023",cat:"policy",img:"https://picsum.photos/seed/rbi-fintech-regulation/900/500.jpg",dur:"3 months",team:"Dept. of Supervision",
-        ch:"India's fintech sector was growing at an unprecedented pace, creating new challenges for RBI's supervisory framework regarding systemic stability and MSME lending.",
-        ap:"Analyzed a 10-year macroeconomic database. Authored a comprehensive report proposing ML-based banking transformations enabling collateral-free loans for MSMEs and farmers.",
-        r:[{m:"MSME Scope",v:"5+ Cr",d:"Targeted loan strategy"},{m:"Pain Points",v:"Identified",d:"75% unsolicited calls"},{m:"Policy",v:"ML-Based",d:"Banking transformations"},{m:"Data Span",v:"10 Years",d:"Macroeconomic analysis"}],
-        q:"Data-driven policy at the apex level creates foundational economic shifts.",qa:"RBI Research"}
+    // ============ PROJECTS DATA ============
+    const projects = [
+        {
+            id: 'oil-gas',
+            cat: 'energy',
+            tag: 'Oil & Gas',
+            title: "Asset Optimization & Quality Management",
+            client: "India's Largest Oil & Gas Producer",
+            img: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80',
+            seed: 'oil-gas-plant',
+            blurb: "End-to-end asset optimization and quality management program for the nation's leading E&P player — unlocking reliability, utilization, and governance at scale.",
+            stats: [
+                { v: "E&P #1", l: "India's largest producer" },
+                { v: "Multi-site", l: "Asset optimization" },
+                { v: "QMS", l: "Quality governance" }
+            ],
+            challenge: "The client — India's largest oil and gas producer — needed to lift the performance of critical production assets while strengthening quality discipline across operations. Variability in asset utilization and inconsistent quality controls were limiting throughput and reliability.",
+            approach: [
+                "Baselined asset criticality, utilization, and downtime drivers across key installations",
+                "Built an asset optimization roadmap: reliability-centered maintenance levers, debottlenecking, and utilization improvement initiatives",
+                "Designed and embedded a structured quality management framework — SOPs, control plans, audit cadence, and defect-prevention loops",
+                "Institutionalized governance dashboards and review rhythms with plant leadership to sustain gains"
+            ],
+            impact: [
+                "Improved asset reliability and utilization across critical installations",
+                "Embedded a repeatable quality management system with clear ownership and audit discipline",
+                "Created a data-driven governance model enabling continuous, measurable improvement"
+                // TODO: Add your confidential numeric outcomes here when shareable, e.g. "Utilization +X%", "₹X Cr impact"
+            ]
+        },
+        {
+            id: 'foundry',
+            cat: 'consulting',
+            tag: 'Manufacturing',
+            title: "Foundry Direct Cost Reduction",
+            client: "Leading Pumps & Pipe Manufacturer",
+            img: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=900&q=80',
+            seed: 'foundry-plant',
+            blurb: "Should-cost based supplier negotiations, billing weight revalidation, and yield optimization unlocking ~₹10 Cr in identified savings.",
+            stats: [
+                { v: "₹10 Cr", l: "Savings identified" },
+                { v: "Should-cost", l: "Negotiation engine" },
+                { v: "Yield", l: "Optimization" }
+            ],
+            challenge: "Rising input costs and weak supplier cost transparency were compressing margins across the foundry value chain.",
+            approach: [
+                "Built should-cost models for critical castings and consumables",
+                "Led structured supplier negotiations anchored on cost-driver evidence",
+                "Revalidated billing weights and recovered overbilling leakages",
+                "Optimized melt and process yield across key product lines"
+            ],
+            impact: [
+                "~₹10 Cr in identified annualized operational savings",
+                "Sustainable negotiation playbook adopted by procurement teams",
+                "Reduced material wastage via yield improvement levers"
+            ]
+        },
+        {
+            id: 'seamless',
+            cat: 'consulting',
+            tag: 'Manufacturing',
+            title: "Seamless Pipe Operational Turnaround",
+            client: "Tier-1 Seamless Pipe Manufacturer",
+            img: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80',
+            seed: 'steel-pipes',
+            blurb: "Operational transformation delivering +6% on-time delivery, −3% downtime, and ₹15+ Cr in annualized savings.",
+            stats: [
+                { v: "₹15+ Cr", l: "Annualized savings" },
+                { v: "+6%", l: "On-time delivery" },
+                { v: "−3%", l: "Downtime" }
+            ],
+            challenge: "Chronic delivery slippages and unplanned downtime were eroding customer trust and profitability.",
+            approach: [
+                "Diagnosed downtime drivers across melting, rolling, and finishing",
+                "Deployed planning and scheduling improvements with plant heads",
+                "Institutionalized daily performance management and escalation rituals"
+            ],
+            impact: [
+                "On-time delivery improved by 6 percentage points",
+                "Unplanned downtime reduced by 3%",
+                "₹15+ Cr in annualized savings delivered"
+            ]
+        },
+        {
+            id: 'oee',
+            cat: 'consulting',
+            tag: 'Manufacturing',
+            title: "OEE & Productivity Enhancement",
+            client: "Multi-plant Industrial Client",
+            img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80',
+            seed: 'plant-engineer',
+            blurb: "Root-cause controls with plant leadership lifting OEE by 8%, cutting scrap, and driving 15% productivity growth.",
+            stats: [
+                { v: "+8%", l: "OEE improvement" },
+                { v: "−Scrap", l: "Waste reduction" },
+                { v: "+15%", l: "Productivity growth" }
+            ],
+            challenge: "Low overall equipment effectiveness and high scrap rates were capping plant throughput.",
+            approach: [
+                "Loss-tree analysis to isolate top OEE detractors",
+                "Root-cause controls co-implemented with plant heads",
+                "Operator-level standard work and visual management"
+            ],
+            impact: [
+                "OEE improved by 8%",
+                "Scrap reduced across key lines",
+                "15% overall productivity growth"
+            ]
+        },
+        {
+            id: 'ev-gtm',
+            cat: 'consulting',
+            tag: 'Mobility',
+            title: "EV OEM Go-to-Market Strategy",
+            client: "Premium Electric Vehicle OEM",
+            img: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=900&q=80',
+            seed: 'ev-launch',
+            blurb: "Data-driven dealer selection and onboarding generating ₹12 Cr+ in annual recurring revenue.",
+            stats: [
+                { v: "₹12 Cr+", l: "ARR generated" },
+                { v: "B2B", l: "Sales strategy" },
+                { v: "Pan-India", l: "Dealer network" }
+            ],
+            challenge: "The OEM needed a rigorous, analytics-backed framework to pick and onboard high-potential dealership partners.",
+            approach: [
+                "Built market attractiveness and partner fit scoring models",
+                "Designed onboarding playbook and channel economics",
+                "Supported negotiation and activation of top-tier dealers"
+            ],
+            impact: [
+                "Dealerships onboarded generating ₹12 Cr+ ARR",
+                "Repeatable partner-selection framework for future expansion"
+            ]
+        },
+        {
+            id: 'energy-sust',
+            cat: 'energy',
+            tag: 'Energy',
+            title: "Energy Efficiency & Sustainability",
+            client: "Energy-Intensive Manufacturer",
+            img: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=900&q=80',
+            seed: 'energy-power',
+            blurb: "Boiler scheduling and fuel-mix optimization cutting specific fuel consumption 22% and power costs 8%.",
+            stats: [
+                { v: "−22%", l: "Fuel (109→85 L/MT)" },
+                { v: "−8%", l: "Power cost" },
+                { v: "CO₂", l: "Footprint reduction" }
+            ],
+            challenge: "High specific fuel consumption and energy costs threatened both margins and sustainability targets.",
+            approach: [
+                "Energy audit and baseline mapping across utilities",
+                "Advanced boiler scheduling and load management",
+                "Fuel-mix and heat-recovery optimization"
+            ],
+            impact: [
+                "Fuel consumption cut from 109 to 85 L/MT (−22%)",
+                "Overall power costs reduced by 8%"
+            ]
+        },
+        {
+            id: 'ai-agents',
+            cat: 'ai',
+            tag: 'AI & Startup',
+            title: "GenAI Customer Agents at Scale",
+            client: "Gamers Tag Pvt. Ltd",
+            img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80',
+            seed: 'ai-automation',
+            blurb: "n8n-orchestrated AI agents on WhatsApp/Telegram delivering 24/7 support while optimizing startup burn.",
+            stats: [
+                { v: "24/7", l: "AI-driven support" },
+                { v: "n8n", l: "Workflow orchestration" },
+                { v: "−Burn", l: "Cost optimization" }
+            ],
+            challenge: "A lean startup needed always-on customer engagement without scaling headcount.",
+            approach: [
+                "Designed autonomous customer-service agents with LLM backbones",
+                "Integrated WhatsApp and Telegram via n8n automation",
+                "Built finance guardrails to keep burn rate optimized"
+            ],
+            impact: [
+                "24/7 automated customer engagement live across channels",
+                "Significant reduction in support operating costs"
+            ]
+        },
+        {
+            id: 'rbi',
+            cat: 'policy',
+            tag: 'Public Policy',
+            title: "Fintech Landscape Research",
+            client: "Reserve Bank of India — Dept. of Supervision",
+            img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80',
+            seed: 'policy-research',
+            blurb: "10-year macro analysis informing regulatory perspectives and MSME lending transformation for 5+ Cr enterprises.",
+            stats: [
+                { v: "10-yr", l: "Macro database" },
+                { v: "5+ Cr", l: "MSMEs addressable" },
+                { v: "ML", l: "Policy recommendations" }
+            ],
+            challenge: "The regulator needed a ground-up view of user pain points across India's fast-evolving fintech ecosystem.",
+            approach: [
+                "Analyzed a 10-year macroeconomic database on Indian fintech",
+                "Mapped critical user pain points across segments",
+                "Proposed psychometric and ML-based lending transformations"
+            ],
+            impact: [
+                "Findings informed supervisory perspectives on fintech",
+                "Blueprint for collateral-free MSME credit at 5+ Cr scale"
+            ]
+        }
     ];
 
+    // ============ RENDER PROJECT CARDS ============
     const grid = document.getElementById('projectGrid');
-    grid.innerHTML = P.map((p, i) => `
-        <div class="project-card card-hover img-zoom cursor-pointer group" data-category="${p.cat}" onclick="openModal(${i})">
-            <div class="relative rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm">
-                <div class="aspect-[4/3] overflow-hidden"><img src="${p.img}" alt="" class="w-full h-full object-cover"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute top-4 left-4"><span class="bg-white/90 backdrop-blur-sm text-navy-800 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg">${p.ind}</span></div>
-                <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"><div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg"><iconify-icon icon="lucide:arrow-up-right" width="16" class="text-navy-800"></iconify-icon></div></div>
-            </div>
-            <div class="mt-4 px-1">
-                <div class="flex items-center gap-2 mb-1.5"><span class="text-[11px] text-slate-400 font-medium">${p.c}</span><span class="text-slate-300">·</span><span class="text-[11px] text-slate-400">${p.y}</span></div>
-                <h3 class="text-[15px] font-bold text-slate-900 group-hover:text-navy-700 transition-colors">${p.t}</h3>
-                <p class="text-sm text-slate-500 mt-1 leading-relaxed line-clamp-2">${p.ch}</p>
-            </div>
-        </div>
-    `).join('');
-
-    function openModal(i){
-        const p=P[i],m=document.getElementById('pModal'),c=document.getElementById('mContent');
-        c.innerHTML=`<img src="${p.img}" alt="${p.t}" class="w-full h-60 object-cover"><div class="p-8"><div class="flex flex-wrap items-center gap-2.5 mb-3"><span class="bg-navy-50 text-navy-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg">${p.ind}</span><span class="text-slate-300">·</span><span class="text-xs text-slate-400">${p.c}</span><span class="text-slate-300">·</span><span class="text-xs text-slate-400">${p.y}</span></div><h3 class="text-2xl font-extrabold text-slate-900 mb-1">${p.t}</h3><div class="space-y-7 mt-6"><div><h4 class="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-400 mb-2">The Challenge</h4><p class="text-sm text-slate-600 leading-relaxed">${p.ch}</p></div><div><h4 class="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-400 mb-2">My Approach</h4><p class="text-sm text-slate-600 leading-relaxed">${p.ap}</p></div><div><h4 class="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-400 mb-4">Key Outcomes</h4><div class="grid grid-cols-2 gap-3">${p.r.map(x=>`<div class="bg-slate-50 rounded-xl p-4 border border-slate-100"><div class="text-xl font-extrabold text-navy-800 mb-0.5">${x.v}</div><div class="text-xs font-bold text-slate-700 mb-0.5">${x.m}</div><div class="text-[11px] text-slate-400">${x.d}</div></div>`).join('')}</div></div><div class="bg-navy-50/50 border-l-[3px] border-navy-700 rounded-r-xl p-5"><p class="text-sm text-slate-700 italic leading-relaxed">"${p.q}"</p><p class="text-[11px] text-slate-400 mt-2 font-medium">— ${p.qa}</p></div></div></div>`;
-        m.classList.remove('hidden');document.body.style.overflow='hidden';
-    }
-    function closeModal(){document.getElementById('pModal').classList.add('hidden');document.body.style.overflow='';}
-    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
-
-    document.querySelectorAll('.fbtn').forEach(b=>{b.addEventListener('click',()=>{
-        document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');
-        const f=b.dataset.filter;
-        document.querySelectorAll('.project-card').forEach((c,i)=>{
-            const s=f==='all'||c.dataset.category.includes(f);
-            if(s){c.style.display='';c.classList.remove('visible');setTimeout(()=>c.classList.add('visible'),i*80);}
-            else{c.style.display='none';c.classList.remove('visible');}
+    function renderProjects(filter = 'all') {
+        grid.innerHTML = '';
+        const list = projects.filter(p => filter === 'all' || p.cat === filter);
+        list.forEach((p, i) => {
+            const card = document.createElement('div');
+            card.className = 'project-card card-hover bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden cursor-pointer flex flex-col';
+            card.style.animationDelay = (i * 0.07) + 's';
+            card.setAttribute('onclick', `openModal('${p.id}')`);
+            card.innerHTML = `
+                <div class="img-zoom relative h-44">
+                    <img src="${p.img}" alt="${p.title}" loading="lazy" class="w-full h-full object-cover"
+                         onerror="this.onerror=null;this.src='https://picsum.photos/seed/${p.seed}/900/600.jpg';">
+                    <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,15,27,.55), transparent 60%);"></div>
+                    <span class="absolute bottom-3 left-3 bg-copper-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg shadow-md">${p.tag}</span>
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <p class="text-[11px] font-bold text-copper-600 uppercase tracking-wide mb-1.5">${p.client}</p>
+                    <h3 class="font-display text-base font-bold text-ink-900 leading-snug mb-3">${p.title}</h3>
+                    <div class="grid grid-cols-3 gap-2 mt-auto">
+                        ${p.stats.map(s => `
+                            <div class="bg-slate-50 border border-slate-100 rounded-lg px-2 py-2 text-center">
+                                <p class="font-display text-xs font-bold text-ink-900 leading-tight">${s.v}</p>
+                                <p class="text-[9px] text-slate-400 leading-tight mt-0.5">${s.l}</p>
+                            </div>`).join('')}
+                    </div>
+                    <div class="flex items-center gap-1.5 text-copper-600 text-xs font-bold uppercase tracking-wider mt-4">
+                        Read Case Study <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon>
+                    </div>
+                </div>`;
+            grid.appendChild(card);
+            requestAnimationFrame(() => { setTimeout(() => card.classList.add('visible'), 30); });
         });
-    });});
+    }
+    renderProjects();
 
-    const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:.08});
-    document.querySelectorAll('.project-card').forEach(c=>obs.observe(c));
-
-    const sObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){
-        const el=x.target,t=parseInt(el.dataset.count),s=el.dataset.suffix||'';let c=0;const step=Math.max(1,Math.ceil(t/25));
-        const iv=setInterval(()=>{c+=step;if(c>=t){c=t;clearInterval(iv);}el.textContent=c+s;},45);sObs.unobserve(el);
-    }});},{threshold:.5});
-    document.querySelectorAll('[data-count]').forEach(el=>sObs.observe(el));
-
-    window.addEventListener('scroll',()=>{
-        const n=document.getElementById('navbar');
-        n.style.borderBottomColor=scrollY>50?'#e2e8f0':'transparent';
-        ['about','services','experience','projects','publications','contact'].forEach(id=>{
-            const s=document.getElementById(id),l=document.querySelector(`.nav-link[href="#${id}"]`);
-            if(s&&l){const r=s.getBoundingClientRect();if(r.top<=120&&r.bottom>120){document.querySelectorAll('.nav-link').forEach(x=>x.classList.remove('active'));l.classList.add('active');}}
+    document.querySelectorAll('.fbtn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderProjects(btn.dataset.filter);
         });
     });
 
-    document.getElementById('mobBtn').addEventListener('click',()=>document.getElementById('mobMenu').classList.toggle('hidden'));
-    document.querySelectorAll('.ml').forEach(l=>l.addEventListener('click',()=>document.getElementById('mobMenu').classList.add('hidden')));
+    // ============ MODAL ============
+    function openModal(id) {
+        const p = projects.find(x => x.id === id);
+        if (!p) return;
+        document.getElementById('mContent').innerHTML = `
+            <div class="relative h-56">
+                <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover"
+                     onerror="this.onerror=null;this.src='https://picsum.photos/seed/${p.seed}/1200/700.jpg';">
+                <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,15,27,.85), rgba(5,15,27,.2));"></div>
+                <div class="absolute bottom-5 left-6 right-6">
+                    <span class="inline-block bg-copper-500 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg mb-3">${p.tag}</span>
+                    <h3 class="font-display text-xl md:text-2xl font-bold text-white leading-snug">${p.title}</h3>
+                    <p class="text-white/70 text-sm mt-1">${p.client}</p>
+                </div>
+            </div>
+            <div class="p-6 md:p-8">
+                <div class="grid grid-cols-3 gap-3 mb-8">
+                    ${p.stats.map(s => `
+                        <div class="stat-card rounded-xl p-4 text-center border border-copper-100">
+                            <p class="font-display text-lg font-bold text-copper-600">${s.v}</p>
+                            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wide mt-0.5">${s.l}</p>
+                        </div>`).join('')}
+                </div>
+                <div class="mb-6">
+                    <div class="flex items-center gap-2 mb-2"><div class="accent-bar" style="width:28px;height:3px;"></div><h4 class="font-display text-sm font-bold text-ink-900 uppercase tracking-wide">The Challenge</h4></div>
+                    <p class="text-sm text-slate-600 leading-relaxed">${p.challenge}</p>
+                </div>
+                <div class="mb-6">
+                    <div class="flex items-center gap-2 mb-3"><div class="accent-bar" style="width:28px;height:3px;"></div><h4 class="font-display text-sm font-bold text-ink-900 uppercase tracking-wide">Approach</h4></div>
+                    <ul class="space-y-2.5">
+                        ${p.approach.map(a => `<li class="flex items-start gap-2.5 text-sm text-slate-600 leading-relaxed"><iconify-icon icon="lucide:check-circle-2" width="16" class="text-copper-500 mt-0.5 flex-shrink-0"></iconify-icon>${a}</li>`).join('')}
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 mb-3"><div class="accent-bar" style="width:28px;height:3px;"></div><h4 class="font-display text-sm font-bold text-ink-900 uppercase tracking-wide">Impact</h4></div>
+                    <ul class="space-y-2.5">
+                        ${p.impact.map(a => `<li class="flex items-start gap-2.5 text-sm text-slate-600 leading-relaxed"><iconify-icon icon="lucide:trending-up" width="16" class="text-emerald-500 mt-0.5 flex-shrink-0"></iconify-icon>${a}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>`;
+        document.getElementById('pModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+        document.getElementById('pModal').classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-    document.getElementById('cForm').addEventListener('submit',e=>{
-        e.preventDefault();const b=e.target.querySelector('button[type="submit"]');
-        b.innerHTML='<iconify-icon icon="lucide:loader-2" width="16" class="animate-spin"></iconify-icon> Sending...';b.disabled=true;
-        setTimeout(()=>{b.innerHTML='<iconify-icon icon="lucide:check" width="16"></iconify-icon> Sent!';b.classList.remove('bg-navy-800','hover:bg-navy-900','shadow-navy-800/20');b.classList.add('bg-emerald-600','shadow-emerald-600/20');
+    // ============ COUNTERS ============
+    const counterObs = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseInt(el.dataset.count);
+                const suffix = el.dataset.suffix || '';
+                let cur = 0;
+                const step = Math.max(1, Math.ceil(target / 40));
+                const timer = setInterval(() => {
+                    cur += step;
+                    if (cur >= target) { cur = target; clearInterval(timer); }
+                    el.textContent = cur + suffix;
+                }, 40);
+                counterObs.unobserve(el);
+            }
+        });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('[data-count]').forEach(el => counterObs.observe(el));
+
+    // ============ NAV: scroll state, mobile menu, scrollspy ============
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 24) {
+            navbar.classList.add('border-slate-200/80', 'shadow-lg', 'shadow-slate-200/40');
+        } else {
+            navbar.classList.remove('border-slate-200/80', 'shadow-lg', 'shadow-slate-200/40');
+        }
+    });
+
+    const mobBtn = document.getElementById('mobBtn');
+    const mobMenu = document.getElementById('mobMenu');
+    mobBtn.addEventListener('click', () => mobMenu.classList.toggle('hidden'));
+    mobMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobMenu.classList.add('hidden')));
+
+    const spyObs = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                document.querySelectorAll('.nav-link').forEach(l => {
+                    l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id);
+                });
+            }
+        });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('section[id]').forEach(s => spyObs.observe(s));
+
+    // ============ CONTACT FORM ============
+    document.getElementById('cForm').addEventListener('submit', function(e) {
+        e.preventDefault();
         document.getElementById('fOk').classList.remove('hidden');
-        setTimeout(()=>{b.innerHTML='Send Message <iconify-icon icon="lucide:arrow-right" width="14"></iconify-icon>';b.classList.add('bg-navy-800','hover:bg-navy-900','shadow-navy-800/20');b.classList.remove('bg-emerald-600','shadow-emerald-600/20');b.disabled=false;e.target.reset();document.getElementById('fOk').classList.add('hidden');},4000);
-        },1500);
+        this.reset();
+        setTimeout(() => document.getElementById('fOk').classList.add('hidden'), 5000);
     });
     </script>
 </body>
